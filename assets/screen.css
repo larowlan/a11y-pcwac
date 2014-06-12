@@ -1389,7 +1389,7 @@ body.iviewChannel div#promoBoxHolder {margin-bottom:2.8em}
 /* ---------------------------------------------- */
 /* site footer */
 
-#siteFooter h2,#siteFooter h3 {color:#7f7f7f}
+#siteFooter h2,#siteFooter h3, #tvHome #siteFooter h2 a {color:#7f7f7f}
 #siteFooter {margin:0}
 
 #exploreWrap {
