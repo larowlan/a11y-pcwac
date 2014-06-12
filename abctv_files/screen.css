@@ -1,0 +1,84 @@
+
+/* --- ABC Nav and Footer styles  --- */
+/* created by: Geoff Pack, Mar 2009   */
+/* last modified: March 2011          */
+
+
+/* --- ABC Nav  --- */
+
+#abcNav {margin:0; padding:0; min-width:1000px; font:11px/1.1em Arial,Helvetica,sans-serif; text-align:left; color:#777; background:#616161 url('http://www.abc.net.au/res/abc/styles/bg/header.png') left top repeat-x; border-bottom:1px solid #000;}
+#abcNav * {font:11px/1.1em Arial,Helvetica,sans-serif; text-align:left;}
+#abcNav .skiplinks {position:absolute; left:-999px;}
+#abcNavWrapper {width:942px; margin:0 auto; padding:0;}
+#abcNavWrapper:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+#abcNav img {display:inline; border:0;}
+
+#abcNav ul {list-style-type:none; margin:0; padding:0;}
+#abcNav ul li {float:left; margin:0; padding:9px 0 8px 0; text-indent:0; list-style-position:outside; background:url('http://www.abc.net.au/res/abc/styles/bg/divider.png') 0 0 no-repeat; list-style-image:none;}
+#abcNav li.on {background:url('http://www.abc.net.au/res/abc/styles/bg/highlight.png') 0 0 no-repeat;}
+#abcNav a:link, #abcNav a:visited {text-decoration:none; color:#fff; padding:9px 10px 8px 10px;}
+#abcNav a:hover, #abcNav a:active, #abcNav a:focus, #abcNavMenu {text-decoration:none; color:#ddd; background:transparent; border:0;}
+
+#abcNavMenu li a:hover, #abcNavMenu li a:active, #abcNavMenu li a:focus {color:#ddd;}
+
+/* home link */
+#abcNav li#abcNavHome {padding:7px 0 1px 1px; background-position:-1px 0;}
+#abcNav li#abcNavHome a {padding-left:1px;}
+#abcNav li#abcNavHome:hover {background:transparent;}
+#abcNav li#abcNavHome a img {border:0;}
+
+#abcNav li#abcNavRadio {background-position:-1px 0;}
+#abcNav li#abcNavNews {margin-left:24px; background-position:-1px 0;}
+#abcNav li#abcNavHelp {float:right; background-position:-1px 0;}
+#abcNav li#abcNavHelp a {text-decoration:underline;}
+
+/* sub menus: suckerfish dropdowns */
+#abcNav li ul {position:absolute; width:27em; /*left:-999em;*/ display:none; margin:5px 5px 0 -7px; padding:5px 0.3em 2px 0.3em; font:12px/1.3em Arial,Helvetica,sans-serif; background:#eee; border:2px solid #666; z-index:9999;  /*opacity:0.9;*/ -moz-border-radius:7px; -webkit-border-radius:7px; border-radius:7px;}
+#abcNav li ul * {font:12px/1.3em Arial,Helvetica,sans-serif;}
+/*#abcNav li:hover ul, #abcNav li.sfhover ul, #abcNav li:focus ul, #abcNav li.focus ul {left:auto; display:block;}*/
+#abcNav ul li li {float:left; width:8.5em; margin:1px 0; padding:2px 0em 2px 0.5em; background:transparent; border-bottom:1px solid #ddd;}
+#abcNav li li.abcNavLastRow {border-bottom:0;}
+#abcNav li li:hover {background:transparent;}
+#abcNav li li a:link, #abcNav li li a:visited {text-decoration:none; color:#000; padding:3px;}
+#abcNav li li a:hover, #abcNav li li a:active, #abcNav li li a:focus {text-decoration:none; color:#666; background:transparent; border:0;}
+#abcNav li li span {display:none;}
+#abcNav li li.abcNavTopCurve {position:absolute; top:-8px; left:25px; width:11px; height:8px; background:url('http://www.abc.net.au/res/abc/styles/bg/nipple.png') left top no-repeat; border:0;}
+
+/* subnavs */
+#abcNav li#abcNavHome ul	{width:18em;}
+#abcNav li#abcNavRadio ul 	{}
+#abcNav li#abcNavTV ul 		{/*width:18em*/; margin-left:-14px;}
+#abcNav li#abcNavShop ul 	{margin-left:-8px;}
+#abcNav li#abcNavNews ul 	{}
+#abcNav li#abcNavSport ul 	{width:18em;}
+#abcNav li#abcNavLocal ul 	{}
+#abcNav li#abcNavKids ul 	{width:18em; margin-left:-1px;}
+#abcNav li#abcNavScience ul {margin-left:0px;}
+#abcNav li#abcNavHealth ul 	{}
+#abcNav li#abcNavEnvironment ul {width:18em; margin-left:8px;}
+#abcNav li#abcNavTopics ul 	{}
+
+
+/* search form */
+#abcNavSearch {float:right; text-align:right; margin:3px 1px 0 10px; padding:0; white-space:nowrap; vertical-align:middle;} /* right margin prevents search button cropping in FF2 */
+#abcNavSearch label {display:none;}
+#abcNavQuery {width:134px; font-size:11px; margin:0; padding:1px 2px 2px 2px; color:#666; border:1px solid #666;} /* font-size for Firefox 2 */
+#abcNavSubmit {margin:0 0 0 2px; padding:5px; font-size:11px; color:#fff!important; background:url('http://www.abc.net.au/res/abc/styles/bg/search.png') center center no-repeat; border:0;}
+
+
+/* --- ABC Footer --- */
+
+#abcFooter {clear:both; height:50px; min-width:1000px; overflow:hidden; margin:0; padding:0; font:11px/1.3em Arial,Helvetica,sans-serif; text-align:left; color:#444; background:#676767 url('http://www.abc.net.au/res/abc/styles/bg/footer.png') top left repeat-x; border:0; position:relative;} /* postiion required by Safari to fix z-index (bug?) */
+#abcFooter * {font:11px/1.3em Arial,Helvetica,sans-serif; text-align:left;}
+#abcFooter img {display:inline; border:0;}
+
+#abcFooterWrapper {width:998px; margin:0 auto; padding:3px 0 0 0;}
+#abcFooter a:link, #abcFooter a:visited {text-decoration:none; color:#fff; background:transparent;}
+#abcFooter a:hover, #abcFooter a:active, #abcFooter a:focus {text-decoration:underline; color:#ddd; background:transparent; border:0;}
+#abcFooterLegal a:link, #abcFooterLegal a:visited {color:#eee;}
+#abcFooterLegal a:hover, #abcFooterLegal a:active, #abcFooterLegal a:focus {color:#fff;}
+#abcFooter ul {list-style-type:none; margin:0; padding:5px 0 0 0;}
+#abcFooter li {display:inline; float:none; margin:0; padding:0 4px 0 8px; text-indent:0; color:#444; border-left:1px solid #444; background:transparent;}
+#abcFooter li.abcFooterFirst {padding-left:0; border:0;}
+#abcFooterLogo {float:right; width:120px; margin:5px 0 0 0; padding:0; text-align:right; border:0;}
+#abcFooterLogo img {border:0; margin:0; padding:0;}

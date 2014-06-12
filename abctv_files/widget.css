@@ -1,0 +1,22 @@
+/* ABC Shop */
+#abc-shop {min-height:200px;height:auto!important;height:200px; padding: 14px;}
+.best .shopHeaderDiv { display: none; }
+.best .shoptextarea { padding:5px 2px 5px 5px; }
+.best .shopTitleText { font-weight:bold; }
+.best .shopContentTextLine1  { font-size:0.8em; }
+.best .shopContentTextLine2  { font-size:0.8em; color:#F00000; }
+.best .image { float:left; margin:0px 5px 5px 0px; padding:0px 0px 0px 0px; width: 70px; display: block; height: 98px; }
+.ShopImage {
+	width: 77px;
+	display: block;
+	height: 98px;
+	background-image: url(http://shop.abc.net.au/static/themes/Shop2008/common/images/products/placeholder-list.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	float: left;
+	margin-left: 5px;
+}
+.best p { margin:0px; padding:0px 5px 5px 5px;  }
+.best .price { margin:0px; padding:0px 5px 5px 5px;  }
+.best .author { margin:0px; padding:0px 5px;  }
+.best .title { margin:0px; padding:0px 5px;  }
