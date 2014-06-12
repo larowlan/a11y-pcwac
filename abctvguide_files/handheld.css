@@ -1,0 +1,38 @@
+/* --- ABC Nav and Footer styles --- */
+/* created by: Geoff Pack, Mar 2009  */
+/* last modified: December 2010 ---- */
+
+
+/* --- ABC Nav  --- */
+
+#abcNav {margin:0; padding:0.5em 0; min-width:100%; max-width:100%; width:100%; font:0.9em/1.1em Arial,Helvetica,sans-serif; text-align:left; color:#777; background:#616161 url('http://www.abc.net.au/res/abc/styles/bg/header.png') left top repeat-x; border-bottom:1px solid #000;}
+#abcNav * {font:11px/1.6em Arial,Helvetica,sans-serif; text-align:left;}
+#abcNavWrapper {width:95%; margin:0 auto; padding:0;}
+#abcNavWrapper:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+#abcNav ul {list-style-type:none; margin:0; padding:0;}
+#abcNav ul li {display:inline; float:left; margin:2px 0; padding:0 9px 0 8px; border-left:1px solid #333; background:none;}
+#abcNav li#abcNavHome {margin:0; padding-left:0; border:0;}
+#abcNav li#abcNavHome img {margin:0; padding:0;}
+#abcNav a:link, #abcNav a:visited {text-decoration:none; color:#fff;}
+#abcNav a:hover, #abcNav a:active, #abcNav a:focus, #abcNavMenu {text-decoration:none; color:#ddd; background:none; border:0;}
+#abcNavMenu li a:hover, #abcNavMenu li a:active, #abcNavMenu li a:focus {color:#ddd;}
+#abcNavMenu li li {display:none;}
+
+/* search form */
+#abcNavSearch {margin:0px; padding:0 0 0.5em 0; white-space:nowrap; vertical-align:middle;}
+#abcNavSearch label {color:#fff;}
+#abcNavQuery {width:150px; margin:0; padding:1px 2px 2px 2px; color:#666; border:1px solid #666;}
+#abcNavSubmit {margin:0 0 0 2px; padding:5px; font-size:11px; color:#fff; background:url('http://www.abc.net.au/res/abc/styles/bg/search.png') center center no-repeat; border:0;}
+
+
+/* --- ABC Footer --- */
+
+#abcFooter {clear:both; width:100%; max-width:100%; height:auto; overflow:hidden; margin:0; padding:1em 0 0 0; font:11px/1.6em Arial,Helvetica,sans-serif; text-align:left; color:#444; background:#676767 url('http://www.abc.net.au/res/abc/styles/bg/footer.png') top left repeat-x; border:0; position:relative;}
+#abcFooterWrapper {width:95%; margin:0 auto; padding:0;}
+#abcFooter a:link, #abcFooter a:visited {text-decoration:none; color:#fff; background:none;}
+#abcFooter a:hover, #abcFooter a:active, #abcFooter a:focus {text-decoration:underline; color:#ddd; background:transparent; border:0;}
+#abcFooter ul {list-style-type:none; margin:1em 0; padding:0;}
+#abcFooter li {display:inline; float:none; margin:0; padding:0 4px 0 8px; color:#333; border-left:1px solid #333; background:none;}
+#abcFooter li.abcFooterFirst {padding-left:0; border:0;}
+#abcFooterLogo {margin:0; padding:0; border:0;}
+#abcFooterLogo img {margin:0; padding:0; border:0; }
