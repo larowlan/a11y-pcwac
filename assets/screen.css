@@ -36,7 +36,7 @@ html[xmlns] .clearfix, .clearfix {display:block;}
 
 a:link, a:visited {color:#3dadd4;text-decoration:none;}
 a:hover, a:active {}
-a:focus {outline: none;}
+a:focus {outline: 1px dotted #595959; background-color: rgba(21,38,44,.3)!important;}
 a.upArrow  {padding-left:20px;  background:transparent url(/tv/styles/img/bg_uparrow.png) 0px 6px no-repeat;}
 a.downArrow  {padding-left:20px; background:transparent url(/tv/styles/img/bg_downarrow.png) 0px 6px no-repeat;}
 a.rightArrow {padding-left:16px; background:transparent url('/tv/styles/img/bg_right_arrow.png') 0px 4px no-repeat;}
