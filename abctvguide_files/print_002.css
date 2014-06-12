@@ -1,0 +1,15 @@
+
+/* --- ABC Nav and Footer print styles  --- */
+
+#abcNav {display:none;}
+
+#abcFooter {text-align:center; margin-top:1em; padding-top:1em; border-top:1px solid #ccc;} 
+#abcFooterWrapper {text-align:center;}
+#abcFooter a:link, #abcFooter a:visited, #abcFooter a:hover, #abcFooter a:active, #abcFooter a:focus {text-decoration:none; color:#333;}
+
+#abcFooter ul {list-style-type:none; margin:0; padding:5px 0 0 0; text-align:center;}
+#abcFooterLinks {display:none;}
+#abcFooterLegal li {display:none;}
+#abcFooterLegal li.abcFooterFirst {display:block;}
+#abcFooterLogo {width:120px; margin:5px 0 0 0; padding:0; border:0;}
+#abcFooterLogo img {border:0; margin:0; padding:0;}
