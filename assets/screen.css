@@ -1,5 +1,5 @@
 html {height:100%;}
-body {font:12px/1.5em Arial,Helvetica,sans-serif; margin:0; padding:0; color:#333;height:100%; min-width:980px;background:#15262c url(/tv/styles/img/bg_site.jpg) repeat-x 0px 30px} 
+body {font:12px/1.5em Arial,Helvetica,sans-serif; margin:0; padding:0; color:#333;height:100%; min-width:980px;background:#15262c url(/tv/styles/img/bg_site.jpg) repeat-x 0px 30px}
 
 .right {float:right;}
 .left {float:left;}
@@ -453,7 +453,7 @@ span.listen, p.listen, li.listen {background: url('/tv/styles/img/icon_audio.gif
 #calendar {display:none;width:214px;position:absolute;top:-60px;left:0px;z-index:3;background:url(/tv/styles/img/bg_epgbox_shadow.png) no-repeat bottom right;}
 .replace{ position:relative; margin:0px; padding:0px; /* hide overflow:hidden from IE5/Mac */ /* \*/ overflow: hidden; /* */ }
 .replace span{ display:block; position:absolute; top:0px; left:0px; z-index:1; /*for Opera 5 and 6*/ }
-#calendar h3#sdate, #calendar h3#sdate span{padding:0; height:26px; width:120px; background: url(bg_tab_select_date.gif) no-repeat top left; } 
+#calendar h3#sdate, #calendar h3#sdate span{padding:0; height:26px; width:120px; background: url(bg_tab_select_date.gif) no-repeat top left; }
 #calendar h3#ssub, #calendar h3#ssub span{ padding:0;height:26px; width:143px; background: url(bg_tab_sel_subject.gif) no-repeat top left; }
 #calendar table {width:201px;}
 #calTable table {border-bottom:1px solid #787878;}
@@ -505,8 +505,8 @@ div.qtip-tip {bottom:7px !important;}
 #epgBubble #epgBubbleInner .epgBubbleDetails {display:block;font-size:11px;font-style:italic;color:#eeeeee;margin:4px 0 0 15px}
 #epgBubble #epgBubbleInner .epgBubbleDesc {display:block;color:#eeeeee;margin:10px 10px 0 15px}
 
-#epgInnerWrap {position:absolute;right:0px;top:28px;width:850px;height:auto;overflow:auto;overflow-y:hidden;padding-bottom:0px;padding-left:5px;} 
-#tvABC1 #epgInnerWrap,#tvABC2 #epgInnerWrap,#tvABCNews #epgInnerWrap {top:0px;width:848px;height:164px;} 
+#epgInnerWrap {position:absolute;right:0px;top:28px;width:850px;height:auto;overflow:auto;overflow-y:hidden;padding-bottom:0px;padding-left:5px;}
+#tvABC1 #epgInnerWrap,#tvABC2 #epgInnerWrap,#tvABCNews #epgInnerWrap {top:0px;width:848px;height:164px;}
 
 /* 11640px is 120px * number of epg time segments */
 #epgTimes {position:relative;height:62px;width:11760px;background:#fdfdfd;z-index:1;}
@@ -515,7 +515,7 @@ div.qtip-tip {bottom:7px !important;}
 
 div.epgRowWrap {position:relative;height:86px;}
 div.epgRow {position:absolute;top:0px;left:0px;height:86px;width:11760px;background:#fdfdfd;border-top:1px solid #cacdcd;}
-#tvABCNews div.epgRow {background:#ffffff} 
+#tvABCNews div.epgRow {background:#ffffff}
 div.epgRow ul li {position:relative;overflow:hidden;float:left;display:inline;padding:0 0 0 5px;background:url(/tv/styles/img/bg_epg_li.gif) no-repeat left 0px;height:86px;z-index:2}
 div.epgRow .itemTitle a {display:inline-block;color:#3dadd4;line-height:110%;padding-top:4px;z-index:20}
 div.epgRow .itemTitle a.infoa {display:block;text-align:center;height:100%;font-size:13px}
@@ -634,7 +634,7 @@ div.epgRow ul li:hover {box-shadow: inset 0px 0px 30px #c8c8c8;}
 #epgProgram #prgContent {float:left;width:461px;padding:0 20px 0 20px;}
 #epgProgram #prgContent h3#aboutPrg {padding:11px 0 0 0;display:block;margin:10px 0 0 0;color:#6a6a6a}
 #epgProgram #prgContent h4 {padding:2px 0 0 0;display:block;margin:2px 0 0 0;color:#000000}
-#epgProgram #prgContent p {margin:8px 0 8px 0} 
+#epgProgram #prgContent p {margin:8px 0 8px 0}
 
 #epgProgram #sideInfo {float:left;width:228px;padding:10px 0 10px 0}
 #epgProgram #sideInfo h4 {padding:0 0 4px 0;color:#6a6a6a;font-size:14px;font-weight:bold;margin:20px 9px 0 9px;border-bottom:1px solid #bdc1c0}
@@ -706,7 +706,7 @@ h2.youtube a {padding-left: 43px; margin-left: -43px; }
 #featureContact ul li { list-style-image:url('/tv/styles/img/li_contact.gif'); margin-left: 20px;}
 #featureContact ul a {font-weight: bold; color: #666;}
 
-#nlE, #nlEu  { border: 1px solid #3a3a3a; font-size: 11px; width: 200px; padding-left: 2px; } 
+#nlE, #nlEu  { border: 1px solid #3a3a3a; font-size: 11px; width: 200px; padding-left: 2px; }
 #subNl, #subNlu { border: 1px solid #3a3a3a; background:#efefef; font-size: 11px; padding: 1px 0px; width: 70px; margin: 0; cursor: pointer; }
 
 #tvSocial .contentCol br {display: none;}
@@ -838,7 +838,7 @@ span.rss, p.rss, li.rss {background: url('/tv/styles/img/icon_rss_w.gif') 2px 2p
 #tvABC2 #siteFooter #footerHelp a.rightArrow {background: none; padding-left: 0;}
 
 /* ABC NEWS 24 */
-body#tvABCNews {height:100%; min-width:980px; margin:0; padding:0;background: #003e87 url('/tv/styles/img/bg_site_news.jpg') center 32px repeat-x;} 
+body#tvABCNews {height:100%; min-width:980px; margin:0; padding:0;background: #003e87 url('/tv/styles/img/bg_site_news.jpg') center 32px repeat-x;}
 #tvABCNews #siteHeader 	{width:980px; height:114px; background:#003e87 url('/tv/styles/img/bg_siteheader_news.jpg') 0px 8px no-repeat;position:relative;margin-bottom:12px}
 #tvABCNews #pageWrapper a:link, #tvABCNews #pageWrapper a:visited {color:#2c9bff;}
 #tvABCNews #pageWrapper #siteHeader a:link, #tvABCNews #siteHeader a:visited {color: #fff;}
@@ -984,7 +984,7 @@ body#tvIview div#mainContent a.UpArrow {background: transparent url('/tv/styles/
 #featureModule .ui-tabs-nav {list-style: none; margin: 0; padding: 0;}
 #featureModule .ui-tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */ display: block;clear: both;content: " ";}
 #featureModule .ui-tabs-nav li {float: left; margin-right: 3px;}
-#featureModule .ui-tabs-nav a { /* position: relative makes opacity fail for disabled tab in IE */	padding: 5px 14px 5px 14px; color: #27537a; line-height: 29px; background: #007199; color: #fff; white-space: nowrap; /* required in IE 6 */    
+#featureModule .ui-tabs-nav a { /* position: relative makes opacity fail for disabled tab in IE */	padding: 5px 14px 5px 14px; color: #27537a; line-height: 29px; background: #007199; color: #fff; white-space: nowrap; /* required in IE 6 */
     outline: 0; /* prevent dotted border in Firefox */
 	overflow: hidden;
 }
@@ -1030,16 +1030,16 @@ body#tvIview div#mainContent a.UpArrow {background: transparent url('/tv/styles/
     height: 22px;
     margin: 0 3px 0 0;
     padding: 0;
-    width: 159px;	
+    width: 159px;
 }
-	
+
 #progWrap table {
 	display:none;
 }
 
 #clearForm {
 	margin-left:10px;
-}	
+}
 
 #newList {
 	margin-top:20px;
@@ -1109,8 +1109,8 @@ body#tvIview div#mainContent a.UpArrow {background: transparent url('/tv/styles/
 #ft1 {display:none}
 
 
-a.showDrop {background: url('/tv/styles/img/bg_drop_link_w.gif') no-repeat 0px 4px; font-weight: bold; padding-left: 18px;}	
-body#tvPrograms #mainContent, body#search #mainContent, body#help #mainContent {width:700px; padding:20px 10px 20px 19px} 
+a.showDrop {background: url('/tv/styles/img/bg_drop_link_w.gif') no-repeat 0px 4px; font-weight: bold; padding-left: 18px;}
+body#tvPrograms #mainContent, body#search #mainContent, body#help #mainContent {width:700px; padding:20px 10px 20px 19px}
 body#tvPrograms #featureModule, body#tvChannels #featureModule {float:left; width:700px; border-bottom:1px solid #888;background:#fff url(/tv/styles/img/bg_programsmodule.gif) no-repeat 0px 29px; padding-bottom:1em; margin-bottom:2em}
 
 ul.programAZ, ul.programAZ li {float:left; display:inline; color:#8d9ca1}
@@ -1174,9 +1174,9 @@ table.azList th.letter {text-align:left; font-size:3em; width:50px; vertical-ali
 table.azList th.genre {text-align:left; width:70px; font-size:1em; font-weight:bold;}
 table.azList td {text-align:center; padding:0.5em 0px 0.5em 0px;}
 
-table.azList td.programTitle {text-align:left; width:290px; padding-left:70px;}	
+table.azList td.programTitle {text-align:left; width:290px; padding-left:70px;}
 table.azList td.programTitle a {font-weight:bold}
-table.azList td.website, table.azList th.website {width:60px;} 
+table.azList td.website, table.azList th.website {width:60px;}
 table.azList td.iview, table.azList th.iview {width:60px;}
 table.azList td.video, table.azList th.video {width:60px;}
 table.azList td.download, table.azList th.download {width:80px;}
@@ -1202,7 +1202,7 @@ ul.hideList, div.hideTab {display:none}
 body#help div#mainContent a.UpArrow {background:url(/tv/styles/img/bg_drop_link_on.gif) no-repeat 0 4px !important;}
 
 .fl {float:left}
-.w100 {width:100%} 
+.w100 {width:100%}
 
 /* sub navigation highlights */
 body.az li#subnavProgramsAZ a, body.genre li#subnavProgramsGenre a {color:#fff;}
@@ -1233,7 +1233,7 @@ div#searchResults ol  {padding-top:0; list-style-position:outside; list-style-ty
 div#searchResults ol li {padding-bottom:0.5em; font-size:2.2em; color:#203f4a}
 div#searchResults ol li h3 span.result_title a {font-size:15px; font-weight:bold}
 div#searchResults ol li p.result_summary {padding-top:0; margin-top:0; font-size:0.45em; font-weight:normal; color:#6a6a6a}
-div#searchResults ol li h3 span.rank {padding-bottom:0.5em; font-size:1.6em; color:#203f4a;} 
+div#searchResults ol li h3 span.rank {padding-bottom:0.5em; font-size:1.6em; color:#203f4a;}
 div#searchResults a:hover {text-decoration:underline}
 div#searchResults p.morePages {float:left; width:100%; text-align:center}
 div#searchResults p.morePages a:hover {text-decoration:none}
@@ -1278,10 +1278,10 @@ body#help div#mainContent ul li ul.hideFAQ {display:none;}
 body#help div#mainContent p {font-size:1em; color:#6a6a6a; width:660px}
 
 
-/* channel table styles */ 	
+/* channel table styles */
 #cha,.cha {width:530px;margin:0 0 20px 20px}
 #cha td,.cha td {background:#ECECED; padding:3px; width:18%}
-#cha #chafirst {width:30%}	
+#cha #chafirst {width:30%}
 
 
 /* Channels iView page styles */
@@ -1359,7 +1359,7 @@ body.iviewChannel div#promoBoxHolder {margin-bottom:2.8em}
     font-weight: bold;
     margin-right: 5px;
 }
-.twitter_fd {color: #FFFFFF;margin-left:19px}	
+.twitter_fd {color: #FFFFFF;margin-left:19px}
 .twitter_fd img {border: medium none;}
 .twitter_up, .twitter_bottom {
     margin: 0;
@@ -1428,6 +1428,6 @@ body.iviewChannel div#promoBoxHolder {margin-bottom:2.8em}
 
 #siteFooter div#footerHelp h3 {margin:0 0 5px 0;}
 #siteFooter div.footerCol h3 a,#siteFooter div#footerHelp h3 a  {color:#7e7e7e;font-family:Helvetica}
-#siteFooter div.footerCol h3 a:hover,#siteFooter div#footerHelp h3 a:hover {color:#3dadd4} 
+#siteFooter div.footerCol h3 a:hover,#siteFooter div#footerHelp h3 a:hover {color:#3dadd4}
 #siteFooter div#footerHelp ul {margin:0 0 20px 0;}
 
