@@ -44,7 +44,7 @@ var videoEnabled = true;
 
 // hide show drop downs
 $("#dateSelect").click(function () {$("#calendar").slideToggle("fast");return false});
-$("#changeGenre").click(function () {$("#changeGenreBox").slideToggle("fast");return false});	
+$("#changeGenre").click(function () {$("#changeGenreBox").slideToggle("fast");return false});
 $("#changeRegion").click(function () {$("#changeRegionBox").slideToggle("fast");return false});
 $("#printGuide").click(function () {$("#printGuideBox").slideToggle("fast");return false});
 $("#jumpDay").click(function () {$("#jumpDayBox").slideToggle("fast");return false});
@@ -55,7 +55,7 @@ $('#switchView').click(function() {
 	$("#epgInnerWrap").scrollTo(0+'px',0,{axis:'x'});
 	$('#horiz').removeClass('mainContentInner').removeClass('mainContentInnerv');
 	$('#horiz').addClass('mainContentInnerv');
-	$("#switchViewh").show();$("#switchView").hide();	
+	$("#switchViewh").show();$("#switchView").hide();
 	$('#leftSide').hide();
 	$("body").scrollTo( $("#viewFull"),1000,{axis:'y',offset:-20});
 	$.cookie('tvguideLayout', 'vertical', { expires: 365 });
@@ -70,7 +70,7 @@ $('#switchViewh').click(function() {
 		$('#horiz').addClass('mainContentInner');
 		$('#leftSide').show();
 		$("#switchViewh").hide();$("#switchView").show();
-		$("#epgInnerWrap").scrollTo(timeDistance+'px',0,{axis:'x'});		
+		$("#epgInnerWrap").scrollTo(timeDistance+'px',0,{axis:'x'});
 	};
 	$.cookie('tvguideLayout', 'horizontal', { expires: 365 });
 	return false;
@@ -78,7 +78,7 @@ $('#switchViewh').click(function() {
 
 $("#changeRegionBox ul li a").click(function() {
 	var stateLocation = $(this).attr("href");
-	$.cookie('tvguideRegion', this, { expires: 365 });	
+	$.cookie('tvguideRegion', this, { expires: 365 });
 	window.location = stateLocation;
 	return false;
 });
@@ -89,10 +89,10 @@ $("#changeRegionBox ul li a").click(function() {
 // check if drop boxes in use (mouse over)
 $("#calendar")
 .mouseover(function() { calendarInUse = true; })
-.mouseout(function() { calendarInUse = false; });	
+.mouseout(function() { calendarInUse = false; });
 $("#changeRegionBox")
 .mouseover(function() { regionInUse = true; })
-.mouseout(function() { regionInUse = false; });	
+.mouseout(function() { regionInUse = false; });
 $("#changeGenreBox")
 .mouseover(function() { genreInUse = true; })
 .mouseout(function() { genreInUse = false; });
@@ -101,16 +101,16 @@ $("#jumpDayBox")
 .mouseout(function() { jumpInUse = false; });
 $("#printGuideBox")
 .mouseover(function() { printInUse = true; })
-.mouseout(function() { printInUse = false; });	
+.mouseout(function() { printInUse = false; });
 
 // close drop downs on blur
 $("body").click(function (evt) {
 	var target = evt.target;
     if((calendarInUse !== true)&&(target.id !== 'dateSelect')){$("#calendar").hide("fast");}
-	if((genreInUse !== true)&&(target.id !== 'changeGenre')){$("#changeGenreBox").hide("fast");}  	
-	if((regionInUse !== true)&&(target.id !== 'changeRegion')){$("#changeRegionBox").hide("fast");}  
-	if((jumpInUse !== true)&&(target.id !== 'jumpDay')){$("#jumpDayBox").hide("fast");} 
-	if((printInUse !== true)&&(target.id !== 'printGuide')){$("#printGuideBox").hide("fast");}  
+	if((genreInUse !== true)&&(target.id !== 'changeGenre')){$("#changeGenreBox").hide("fast");}
+	if((regionInUse !== true)&&(target.id !== 'changeRegion')){$("#changeRegionBox").hide("fast");}
+	if((jumpInUse !== true)&&(target.id !== 'jumpDay')){$("#jumpDayBox").hide("fast");}
+	if((printInUse !== true)&&(target.id !== 'printGuide')){$("#printGuideBox").hide("fast");}
 });
 
 // time of day scroll
@@ -141,7 +141,7 @@ $("#genSport").click(function () {goGenre('Sport')});
 $("#genScience").click(function () {goGenre('Science and Health')});
 
 
-// init tv guide layout	
+// init tv guide layout
 tvGuide();
 
 
@@ -157,7 +157,7 @@ $('div.epgRow ul li').click(function(e){
 	// cookie is basic attempt to prevent auto-scroll when using back button from program page
 	// also catering for News and 7.30 link issue
 	if (eventLink.length > 1) {
-		$.cookie('backtoGuide',programItem, { expires: 1 });	
+		$.cookie('backtoGuide',programItem, { expires: 1 });
 		window.location = eventLink;
 	}
 	if (eventTitle == "ABC News") {
@@ -165,10 +165,10 @@ $('div.epgRow ul li').click(function(e){
 	}
 	if (eventTitle.indexOf('7.30') >= 0) {
 		window.location = '/7.30/';
-	}	
+	}
 	if (eventTitle.indexOf('rage') >= 0) {
 		window.location = '/rage/';
-	}	
+	}
 	return false;
 });
 
@@ -197,7 +197,7 @@ function goGenre(chosenGenre) {
 		$('span.itemGenre:contains("' + chosenGenre + '")').each(function(){
 			  $(this).parent().removeClass('unselectedGenre').toggleClass('selectedGenre');
 		});
-	} else {	
+	} else {
 	    $('div.epgRow li').removeClass('selectedGenre').removeClass('unselectedGenre');
 		//$('div.epgRow span,div.epgRow a').parent().toggleClass('selectedGenre');
 	}
@@ -215,7 +215,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 
 
 
-</script>	
+</script>
 
 
 
@@ -272,7 +272,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 						<li><a href="http://shop.abc.net.au/products/exclusive">Exclusives</a></li>
 						<li><a href="http://shop.abc.net.au/products/bestsellers">Best Sellers</a></li>
 						<li><a href="http://shop.abc.net.au/products/new-releases">New Releases</a></li>
-						<li class="abcNavLastRow"><a href="http://shop.abc.net.au/brands">Shop by Brand</a></li> 
+						<li class="abcNavLastRow"><a href="http://shop.abc.net.au/brands">Shop by Brand</a></li>
 						<li class="abcNavLastRow"><a href="http://shop.abc.net.au/genres">Shop by Genre</a></li>
 					</ul>
 				</li>
@@ -283,7 +283,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 						<li><a href="http://www.abc.net.au/news/business/">Business</a></li>
 						<li><a href="http://www.abc.net.au/news/sport/">Sport</a></li>
 						<li><a href="http://www.abc.net.au/news/australia/">Australia</a></li>
-						<li><a href="http://www.abc.net.au/news/entertainment/">Entertainment</a></li>						
+						<li><a href="http://www.abc.net.au/news/entertainment/">Entertainment</a></li>
 						<li><a href="http://www.abc.net.au/thedrum/">The Drum</a></li>
 						<li class="abcNavLastRow"><a href="http://www.abc.net.au/news/world/">World</a></li>
 						<li class="abcNavLastRow"><a href="http://www.abc.net.au/news/weather/">Weather</a></li>
@@ -336,7 +336,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 						<li><a href="http://www.abc.net.au/science/indepth/">In Depth</a></li>
 						<li><a href="http://www.abc.net.au/science/drkarl/">Dr Karl</a></li>
 						<li><a href="http://www.abc.net.au/science/askanexpert/">Ask an Expert</a></li>
-						<li><a href="http://www.abc.net.au/science/games/">Quizzes</a></li>					
+						<li><a href="http://www.abc.net.au/science/games/">Quizzes</a></li>
 						<li><a href="http://www.abc.net.au/science/basics/">Bernie's basics</a></li>
 						<li class="abcNavLastRow"><a href="http://www.abc.net.au/science/careers/">Careers</a></li>
 						<li class="abcNavLastRow"><a href="http://www.abc.net.au/science/learn/">Teaching</a></li>
@@ -376,7 +376,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 
 <div id="pageWrapper"><div id="siteHeader">
 	<a href="http://www.abc.net.au/tv/"><img id="siteLogo" src="abctvguide_files/logo_abctv.gif" alt="ABC TV" height="55" width="193"></a>
-	
+
 	<div id="searchModuleWrap">
 		<div id="searchModule" style="position:relative;width:249px;">
 			<h2>TV Program Search</h2>
@@ -390,7 +390,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 					<input value="Search" id="tvsearchButton" tabindex="2" type="submit">
 				</form>
 			</div>
-			<div class="azSep"></div>		
+			<div class="azSep"></div>
 			<a href="#" id="prgAz" onclick="return false" class="downArrow">Programs A - Z</a>
 			<div id="tvAzWrap">
 				<ul>
@@ -400,25 +400,25 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 				<ul>
 					<li class="firstL"><a href="http://www.abc.net.au/tv/programs/default.htm#j">J</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#k">K</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#l">L</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#m">M</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#n">N</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#o">O</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#p">P</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#q">Q</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#r">R</a></li>
 				</ul>
-				<div class="azSep"></div>	
+				<div class="azSep"></div>
 				<ul>
 					<li class="firstL"><a href="http://www.abc.net.au/tv/programs/default.htm#s">S</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#t">T</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#u">U</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#v">V</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#w">W</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#x">X</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#y">Y</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#z">Z</a></li><li><a href="http://www.abc.net.au/tv/programs/default.htm#shownum">#</a></li>
-				</ul>		
-			<a href="http://www.abc.net.au/tv/programs/default.htm#showall" id="prgShowAll">Show All</a>						
+				</ul>
+			<a href="http://www.abc.net.au/tv/programs/default.htm#showall" id="prgShowAll">Show All</a>
 			</div>
 			<div id="keywordResults">
 				<ul id="filterListA">
-					
+
 				</ul>
 				<ul id="filterListB">
 
-				</ul>						
+				</ul>
 			</div>
 		</div>
 	</div>
-	
+
 	<div id="siteNavWrap">
-		<ul id="siteNavigation"> 
+		<ul id="siteNavigation">
 			<li class="first" id="navHome"><a href="http://www.abc.net.au/tv/">Home</a></li>
 			<li id="navWatchnow"><a href="http://www.abc.net.au/tv/watchnow/">Watch Now</a></li>
 			<li id="navPrograms"><a href="http://www.abc.net.au/tv/programs/">Programs</a></li>
@@ -426,7 +426,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 			<li id="navConnect"><a href="http://www.abc.net.au/tv/connect/">Connect</a></li>
 			<li id="navChannels"><a href="http://www.abc.net.au/tv/channels/">Channels</a></li>
 		</ul>
-	</div>	
+	</div>
 </div>
 
 <div id="epgTopControls">
@@ -476,7 +476,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 		<li><a href="#" id="genSport" onclick="return false">Sport</a></li>
 		<li><a href="#" id="genScience" onclick="return false">Science and Health</a></li>
 	</ul>
-</div>	
+</div>
 <div id="printGuideBox">
 	<ul>
 		<li><a href="http://www.abc.net.au/tv/guide/abc1-7day-guide.htm">ABC1</a></li>
@@ -484,7 +484,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 		<li><a href="http://www.abc.net.au/tv/guide/abc3-7day-guide.htm">ABC3</a></li>
 		<li><a href="http://www.abc.net.au/tv/guide/abcnews24-7day-guide.htm">ABC News24</a></li>
 	</ul>
-</div>	
+</div>
 <div id="calendar">
 <div id="calTable"><table cellspacing="0">
 <caption><a href="http://www.abc.net.au/tv/guide/all/netw/201405/20140501.htm" id="monthPrev"><img src="abctvguide_files/cal_arrow_left.gif" alt="Previous month"></a><strong>June, 2014</strong></caption>
@@ -658,7 +658,7 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 			<li><span><a href="http://www.abc.net.au/iview/#/recent#">Recently Added</a></span></li>
 			<li><span><a href="http://www.abc.net.au/iview/#/last-chance">Last Chance</a></span></li>
 		</ul>
-	</div>	
+	</div>
 	<div id="epgKey">
 		<span>Key to symbols:</span>
 		<span id="keyIview">watch full programs on iView</span>
@@ -671,34 +671,34 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 
 
 <a href="http://www.abc.net.au/tv/programs/mix/#episode/NU1496H001S00"><img src="abctvguide_files/220x220-TheMix.jpg" alt="The Mix" border="0"></a>
-</div>	
+</div>
 		<div id="epgPromo2" class="epgPromoSpace">
 
 
 <a href="http://www.abc.net.au/thebrief/?WT.ac=Innovation_Innovation-TheBrief%7CTvGuide_ABC%7Cabctv"><img src="abctvguide_files/220x220-TheBrief.jpg" alt="The Brief" border="0"></a>
-</div>	
+</div>
 		<div id="epgPromo3" class="epgPromoSpace">
 
 
 <a href="http://ab.co/FreshBlood"><img src="abctvguide_files/220x220-FreshBlood-now.jpg" alt="Fresh Blood" border="0"></a>
-</div>	
+</div>
 		<div id="epgPromo4" class="epgPromoSpace"><div id="promoNewsletter" style="background: #fbfaf7; border: 1px solid #e0e0e0; padding: 10px; width: 200px; height: 200px;">
 <h3><a href="http://www.abc.net.au/tv/connect/newsletter.htm" style="font-weight: normal;">ABC TV Newsletter</a></h3>
 <p>Be the first to know about new shows and special events.</p>
-<form action="http://abcmail.net.au/subscribe/subscribe.tml" method="POST" class="nlSubp"> 
- 
-			<input name="email" value="Your email address" id="nlE" onfocus="this.value='';this.style.color='#000000'" type="text"> 
-			<input id="subNl" title="subscribe" name="subscribe" value="Subscribe" type="submit"> 
-			<input name="list" value="abc-tv-switchedon" type="hidden"> 
-			<input name="confirm" value="one" type="hidden"> 
-			<input name="showconfirm" value="F" type="hidden"> 
-			<input name="url" value="http://www.abc.net.au/tv/newsletter/confirm.htm" type="hidden"> 
-</form> 
+<form action="http://abcmail.net.au/subscribe/subscribe.tml" method="POST" class="nlSubp">
+
+			<input name="email" value="Your email address" id="nlE" onfocus="this.value='';this.style.color='#000000'" type="text">
+			<input id="subNl" title="subscribe" name="subscribe" value="Subscribe" type="submit">
+			<input name="list" value="abc-tv-switchedon" type="hidden">
+			<input name="confirm" value="one" type="hidden">
+			<input name="showconfirm" value="F" type="hidden">
+			<input name="url" value="http://www.abc.net.au/tv/newsletter/confirm.htm" type="hidden">
+</form>
 <p><a href="http://www.abc.net.au/privacy.htm">Privacy policy</a></p>
 </div>
 
-</div>	
-	</div>							
+</div>
+	</div>
 
 
 
@@ -715,50 +715,50 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 			<a href="http://www.abc.net.au/tv/channels/abcnews24.htm"><img src="abctvguide_files/logo_abc4_57.gif" alt="ABC News 24" border="0" width="57"></a>
 			<a href="http://iview.abc.net.au/"><img src="abctvguide_files/logo_iview_48.gif" alt="ABC iview" border="0" width="48"></a>
 		</div>
-		
+
 		<div class="footerCol">
 			<h3><a href="http://www.abc.net.au/tv/watchnow/">Watch Now</a></h3>
 			<ul>
 				<li><a href="http://iview.abc.net.au/">Watch iview</a></li>
 				<li><a href="http://www.abc.net.au/tv/watchnow/">Highlights and previews</a></li>
-			</ul>	
+			</ul>
 		</div>
 		<div class="footerCol">
 			<h3><a href="http://www.abc.net.au/tv/programs/">Programs</a></h3>
 			<ul>
 				<li><a href="http://search.abc.net.au/search/search.cgi?collection=ABC_TV&amp;form=programs&amp;letter=a">Programs A-Z</a></li>
 				<li><a href="http://search.abc.net.au/search/search.cgi?collection=ABC_TV&amp;form=programs&amp;id=artsculture&amp;genre=Art/Culture">Programs by genre</a></li>
-			</ul>	
+			</ul>
 			<h3><a href="http://www.abc.net.au/tv/guide/">TV Guide</a></h3>
 			<ul>
 				<li><a href="http://www.abc.net.au/tv/guide/">Full TV Guide</a></li>
 				<li><a href="http://www.abc.net.au/children/shows/guide/">Kids' TV Guide</a></li>
-			</ul>				
+			</ul>
 		</div>
 		<div class="footerCol">
 			<h3><a href="http://www.abc.net.au/tv/connect/">Connect</a></h3>
-			<ul> 
+			<ul>
 				<li><a href="http://www.abc.net.au/tv/connect/newsletter.htm">Newsletter</a></li>
 				<li><a href="http://www.abc.net.au/tv/connect/messageboards.htm">Message boards</a></li>
 				<li><a href="http://www.abc.net.au/tv/connect/audience.htm">Studio Audience</a></li>
 				<li><a href="http://www.abc.net.au/news/corrections/">Corrections &amp; clarifications</a></li>
-			</ul>	
-		</div>		
+			</ul>
+		</div>
 		<div class="footerCol">
 			<h3><a href="http://www.abc.net.au/tv/channels/">Channels</a></h3>
-			<ul> 
+			<ul>
 				<li><a href="http://iview.abc.net.au/support/what-is-iview">About iview</a></li>
 				<li><a href="http://www.abc.net.au/tv/channels/digital.htm">Digital TV</a></li>
 				<li><a href="http://www.abc.net.au/services/mobile/">ABC Mobile</a></li>
-			</ul>	
+			</ul>
 			<h3>Inside ABC TV</h3>
-			<ul> 
+			<ul>
 				<li><a href="http://www.abc.net.au/tv/independent/">Independent production</a></li>
 				<li><a href="http://www.abc.net.au/programsales/">Program sales</a></li>
 				<li><a href="http://www.abc.net.au/abcresourcehire/">ABC Resource hire</a></li>
 				<li><a href="http://about.abc.net.au/media-centre/">ABC TV Publicity</a></li>
-			</ul>				
-		</div>		
+			</ul>
+		</div>
 		<div id="footerHelp">
 			<h3><a href="http://www.abc.net.au/tv/help/">Help</a></h3>
 			<ul>
@@ -770,9 +770,9 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 				<li><a href="http://www.abc.net.au/tv/help/default.htm#generalFAQS" class="rightArrow">General FAQs</a></li>
 				<li><a href="http://iview.abc.net.au/support/faqs" class="rightArrow">iview FAQs</a></li>
 				<li><a href="http://www.abc.net.au/tv/help/default.htm#digitaltvFAQS" class="rightArrow">Digital TV FAQs</a></li>
-			</ul>	
+			</ul>
 			<h3><a href="http://www.abc.net.au/tv/abctv/contact.htm">Contact Us</a></h3>
-		</div>						
+		</div>
 	</div>
 </div>
 
