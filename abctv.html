@@ -671,36 +671,39 @@ function onItemsLoaded(arr) {
 <div id="sidebar" role="complimentary">
 <div id="miniGuide">
 	<h2>TV Guide</h2>
-	<span id="onNow">ON NOW</span>
+	<a id="onNow" href="#onNowRows">ON NOW</a>
 	<a href="http://www.abc.net.au/tv/guide/#epgEvening" id="onTon">ON TONIGHT</a>
-	<div class="miniRow" id="miniAbc1">
-		<a href="http://www.abc.net.au/tv/channels/abc1.htm"><img src="assets/logo_abc1_48.gif" alt="ABC1" border="0"></a>
-		<span class="miniItem"><span id="miniTabc1a">6:30pm:</span><span class="miniPrgName" id="miniPabc1a"><a href="http://www.abc.net.au/tv/guide/abc1/201406/programs/ZX1232A005D2014-06-12T182920.htm" id="ZX1232A005">QI</a></span></span>
-		<span class="miniItem"><span id="miniTabc1b">6:55pm:</span><span class="miniPrgName" id="miniPabc1b"><a href="http://www.abc.net.au/tv/guide/abc1/201406/programs/NC1459V020D2014-06-12T185644.htm" id="NC1459V020">Clarke and Dawe</a></span></span>
-	</div>
-	<div class="miniRow" id="miniAbc2">
-		<a href="http://www.abc.net.au/tv/channels/abc2.htm"><img src="assets/logo_abc2abc4kids_48b.gif" alt="ABC2/ABC4Kids" border="0"></a>
-		<span class="miniItem"><span id="miniTabc2a">6:30pm:</span><span class="miniPrgName" id="miniPabc2a"><a href="http://www.abc.net.au/tv/guide/abc2/201406/programs/ZX5493A040D2014-06-12T182903.htm" id="ZX5493A040">In The Night Garden</a></span></span>
-		<span class="miniItem"><span id="miniTabc2b">7:00pm:</span><span class="miniPrgName" id="miniPabc2b"><a href="http://www.abc.net.au/tv/guide/abc2/201406/programs/LE1030V017D2014-06-12T190216.htm" id="LE1030V017">Spicks And Specks</a></span></span>
-	</div>
-	<div class="miniRow" id="miniAbc3">
-		<a href="http://www.abc.net.au/abc3/"><img src="assets/logo_abc3_48.gif" alt="ABC3" border="0"></a>
-		<span class="miniItem"><span id="miniTabc3a">6:30pm:</span><span class="miniPrgName" id="miniPabc3a"><a href="http://www.abc.net.au/tv/guide/abc3/201406/programs/ZX0917A017D2014-06-12T183133.htm" id="ZX0917A017">Total Drama World Tour</a></span></span>
-		<span class="miniItem"><span id="miniTabc3b">6:55pm:</span><span class="miniPrgName" id="miniPabc3b"><a href="http://www.abc.net.au/tv/guide/abc3/201406/programs/ZX0917A018D2014-06-12T185525.htm" id="ZX0917A018">Total Drama World Tour</a></span></span>
-	</div>
-	<div class="miniRow" id="miniAbc4">
-		<a href="http://www.abc.net.au/tv/channels/abcnews24.htm"><img src="assets/logo_abc4_48.gif" alt="ABC News 24" border="0"></a>
-		<span class="miniItem"><span id="miniTabc4a">6:00pm:</span><span class="miniPrgName" id="miniPabc4a"><a href="http://www.abc.net.au/tv/guide/abcnews24/201406/programs/NU1410H117D2014-06-12T180000.htm" id="NU1410H117">ABC News</a></span></span>
-		<span class="miniItem"><span id="miniTabc4b">8:30pm:</span><span class="miniPrgName" id="miniPabc4b"><a href="http://www.abc.net.au/tv/guide/abcnews24/201406/programs/NU1404H072D2014-06-12T203130.htm" id="NU1404H072">The Business</a></span></span>
-	</div>
-	<div class="miniRow" id="miniAbciview">
-		<a href="http://iview.abc.net.au/"><img src="assets/logo_iview_48.gif" alt="ABC iView" border="0"></a>
-		<span class="miniItem"><a href="http://iview.abc.net.au/">Never miss a moment</a></span>
-	</div>
-	<div class="miniRow" id="miniKids">
-		<a href="http://www.abc.net.au/children/shows/guide/">Children's TV Guide</a>
-		<a href="http://www.abc.net.au/tv/guide/" id="miniFull">Full TV Guide</a>
-	</div>
+    <div id="onNowRows">
+        <h3 class="visually-hidden">On Now</h3>
+        <div class="miniRow" id="miniAbc1">
+            <a href="http://www.abc.net.au/tv/channels/abc1.htm"><img src="assets/logo_abc1_48.gif" alt="ABC1" border="0"></a>
+            <span class="miniItem"><span id="miniTabc1a">6:30pm:</span><span class="miniPrgName" id="miniPabc1a"><a href="http://www.abc.net.au/tv/guide/abc1/201406/programs/ZX1232A005D2014-06-12T182920.htm" id="ZX1232A005"><span class="visually-hidden">On abc1 at 6:30pm:</span>QI</a></span></span>
+            <span class="miniItem"><span id="miniTabc1b">6:55pm:</span><span class="miniPrgName" id="miniPabc1b"><a href="http://www.abc.net.au/tv/guide/abc1/201406/programs/NC1459V020D2014-06-12T185644.htm" id="NC1459V020"><span class="visually-hidden">On abc1 at 6:55pm:</span>Clarke and Dawe</a></span></span>
+        </div>
+        <div class="miniRow" id="miniAbc2">
+            <a href="http://www.abc.net.au/tv/channels/abc2.htm"><img src="assets/logo_abc2abc4kids_48b.gif" alt="ABC2/ABC4Kids" border="0"></a>
+            <span class="miniItem"><span id="miniTabc2a">6:30pm:</span><span class="miniPrgName" id="miniPabc2a"><a href="http://www.abc.net.au/tv/guide/abc2/201406/programs/ZX5493A040D2014-06-12T182903.htm" id="ZX5493A040"><span class="visually-hidden">On abc2 at 6:30pm:</span>In The Night Garden</a></span></span>
+            <span class="miniItem"><span id="miniTabc2b">7:00pm:</span><span class="miniPrgName" id="miniPabc2b"><a href="http://www.abc.net.au/tv/guide/abc2/201406/programs/LE1030V017D2014-06-12T190216.htm" id="LE1030V017"><span class="visually-hidden">On abc2 at 7:00pm:</span>Spicks And Specks</a></span></span>
+        </div>
+        <div class="miniRow" id="miniAbc3">
+            <a href="http://www.abc.net.au/abc3/"><img src="assets/logo_abc3_48.gif" alt="ABC3" border="0"></a>
+            <span class="miniItem"><span id="miniTabc3a">6:30pm:</span><span class="miniPrgName" id="miniPabc3a"><a href="http://www.abc.net.au/tv/guide/abc3/201406/programs/ZX0917A017D2014-06-12T183133.htm" id="ZX0917A017"><span class="visually-hidden">On abc3 at 6:30pm:</span>Total Drama World Tour</a></span></span>
+            <span class="miniItem"><span id="miniTabc3b">6:55pm:</span><span class="miniPrgName" id="miniPabc3b"><a href="http://www.abc.net.au/tv/guide/abc3/201406/programs/ZX0917A018D2014-06-12T185525.htm" id="ZX0917A018"><span class="visually-hidden">On abc3 at 6:55pm:</span>Total Drama World Tour</a></span></span>
+        </div>
+        <div class="miniRow" id="miniAbc4">
+            <a href="http://www.abc.net.au/tv/channels/abcnews24.htm"><img src="assets/logo_abc4_48.gif" alt="ABC News 24" border="0"></a>
+            <span class="miniItem"><span id="miniTabc4a">6:00pm:</span><span class="miniPrgName" id="miniPabc4a"><a href="http://www.abc.net.au/tv/guide/abcnews24/201406/programs/NU1410H117D2014-06-12T180000.htm" id="NU1410H117"><span class="visually-hidden">On abcnews24 at 6:00pm:</span>ABC News</a></span></span>
+            <span class="miniItem"><span id="miniTabc4b">8:30pm:</span><span class="miniPrgName" id="miniPabc4b"><a href="http://www.abc.net.au/tv/guide/abcnews24/201406/programs/NU1404H072D2014-06-12T203130.htm" id="NU1404H072"><span class="visually-hidden">On abcnews24 at 8:30pm:</span>The Business</a></span></span>
+        </div>
+        <div class="miniRow" id="miniAbciview">
+            <a href="http://iview.abc.net.au/"><img src="assets/logo_iview_48.gif" alt="ABC iView" border="0"></a>
+            <span class="miniItem"><a href="http://iview.abc.net.au/">Never miss a moment</a></span>
+        </div>
+        <div class="miniRow" id="miniKids">
+            <a href="http://www.abc.net.au/children/shows/guide/">Children's TV Guide</a>
+            <a href="http://www.abc.net.au/tv/guide/" id="miniFull">Full TV Guide</a>
+        </div>
+    </div>
 </div>
 <!--include virtual="/tv/inc/rightcol/promo_newsletter.htm" -->
 <!-- shop inc -->

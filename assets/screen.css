@@ -242,7 +242,7 @@ margin: 0pt; /*cursor: pointer;*/ color: #fff;}
 #miniGuide h2 {margin:0 0 10px 0}
 #miniGuide span {color:#a1a1a1;font-weight:bold}
 #tvHome #miniGuide span {color:#bdc1c0;font-weight:normal}
-#miniGuide #onNow {border-right:1px solid #434c4e;font-weight:bold;letter-spacing:1px;margin:0 0 10px 0;display:block;width:80px;float:left}
+#miniGuide #onNow {color: #BDC1C0;border-right:1px solid #434c4e;font-weight:bold;letter-spacing:1px;margin:0 0 10px 0;display:block;width:80px;float:left}
 #miniGuide #onTon {margin:0 0 10px 0;padding:0 10px 0 20px;font-weight:bold;display:inline-block;background:url(/tv/styles/img/bg_right_arrow.png) no-repeat right 4px}
 #miniGuide .miniRow {width:222px;position:relative;margin:0 0 10px 0;border-top:1px solid #515659;padding-top:5px}
 #miniGuide .miniRow img {position:absolute;top:10px;left:0px;}
