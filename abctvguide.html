@@ -385,7 +385,8 @@ function testSend(xyz) {$("#testInput").val(xyz);}
 			<div id="tvSearchFormWrap">
 				<form id="tvSearchForm" action="http://search.abc.net.au/search/search.cgi" method="GET" name="simple">
 					<input value="ABC_TV" name="collection" type="hidden">
-					<input id="inBox" tabindex="1" maxlength="100" name="query" autocomplete="off" type="text">
+                    <label for="inBox" class="visually-hidden">Find a program on ABC TV</label>
+                    <input id="inBox" tabindex="1" maxlength="100" name="query" autocomplete="off" type="text">
 					<!--input type="text" id="inBox" tabindex="1" maxlength="100" name="query" /-->
 					<input value="Search" id="tvsearchButton" tabindex="2" type="submit">
 				</form>
