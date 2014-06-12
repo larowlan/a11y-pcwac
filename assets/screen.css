@@ -1431,3 +1431,7 @@ body.iviewChannel div#promoBoxHolder {margin-bottom:2.8em}
 #siteFooter div.footerCol h3 a:hover,#siteFooter div#footerHelp h3 a:hover {color:#3dadd4}
 #siteFooter div#footerHelp ul {margin:0 0 20px 0;}
 
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
