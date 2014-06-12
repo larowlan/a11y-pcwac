@@ -139,7 +139,7 @@ h2.mainContentH {margin: 25px 0 0 20px;}
 #searchModuleWrap {width:261px;/*background:url('/tv/styles/img/bg_searchModule_shadow.png') no-repeat 0px bottom;*/padding:0 0 10px 0;position:absolute;top:11px;right:-10px;padding-left:10px;z-index:2;}
 #searchModule {width:251px;background:#ffffff;border:1px solid #dddddd;padding-bottom:5px;float:left}
 #searchModule a {padding:0 0 0 17px;display:block;font-weight:bold;margin:0 0 0 11px;}
-#searchModule #prgNameKey {margin:0 0 0 10px;color:#888888;padding:0;font-style:italic}
+#searchModule #prgNameKey {margin:0 0 0 10px;color:#595959;padding:0;font-style:italic}
 #searchModule a#prgAz {}
 #searchModule #tvSearchFormWrap {display:block}
 #searchModule #tvSearchForm {padding:0;margin: 5px 0 9px 11px}
