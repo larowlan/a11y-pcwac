@@ -7,8 +7,5 @@
 
 @import "modules/mess";
 @import "modules/social";
+@import "modules/video_play";
 
-/* Sprites */
-@import "compass/utilities/sprites";
-@import "social/*.png";
-@include all-social-sprites;
