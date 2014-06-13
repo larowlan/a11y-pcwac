@@ -1,0 +1,17 @@
+/* Social icons */
+#socialpromo {
+  padding: 10px 0 10px 4px;
+  margin: 10px 0 20px 10px;
+  background: #cdcdcd;
+  .social-sprite {
+    display: inline-block;
+    text-indent: -10000%;
+    padding-right: 6px;
+    width: 48px;
+    height: 48px;
+  }
+  // No padding here.
+  .social-sprite:last-child {
+    padding-right: 0;
+  }
+}
