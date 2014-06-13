@@ -490,11 +490,8 @@ a#monthNext {background:url(bg_next_month.gif) no-repeat top left;padding:2px 8p
 
 #epgNav #epgNavTodayOn,#epgNav #epgNavYesterdayOn,#epgNav #epgNavTomorrowOn,#epgNav #epgNavMonOn,#epgNav #epgNavTueOn,#epgNav #epgNavWedOn,#epgNav #epgNavThuOn,#epgNav #epgNavFriOn,#epgNav #epgNavSatOn,#epgNav #epgNavSunOn {background:#ffffff;padding:6px 0px 7px 0px;margin-top:-5px;border-left:1px solid #6a6a6a;border-right:1px solid #6a6a6a;border-top:1px solid #6a6a6a;color:#6a6a6a}
 
-#epgWrap #leftSide {position:absolute;float:left;z-index:1;left:0px;top:28px;width:130px;height:405px;background:url(/tv/styles/img/bg_guideleft.png) no-repeat 0px 0px;}
-#tvABC1 #epgWrap #leftSide,#tvABC2 #epgWrap #leftSide, #tvABCNews #epgWrap #leftSide{width:110px;height:148px;top:0px;background:url(/tv/styles/img/bg_guideleft.png) no-repeat -20px 0px;}
-#tvABC2 #epgWrap #leftSide {background:url(/tv/styles/img/bg_guideleft.png) repeat-x 0px 0px;padding-right:20px}
-#epgWrap #leftSide #epgEarlier {position:absolute;top:28px;right:10px;background:url(/tv/styles/img/bg_left_arrow.png) no-repeat 0px 5px;padding-left:10px}
-#tvABC1 #epgWrap #leftSide #epgEarlier,#tvABC2 #epgWrap #leftSide #epgEarlier,#tvABCNews #epgWrap #leftSide #epgEarlier {right:30px;}
+#epgWrap #epgEarlier {position:absolute;top:28px;right:10px;background:url(/tv/styles/img/bg_left_arrow.png) no-repeat 0px 5px;padding-left:10px}
+#tvABC1 #epgWrap #epgEarlier,#tvABC2 #epgWrap #epgEarlier,#tvABCNews #epgWrap #epgEarlier {right:30px;}
 #epgLater {position:absolute;top:49px;right:0px;z-index:2;padding:5px 20px 10px 10px;background:#fdfdfd url(/tv/styles/img/bg_right_arrow.png) no-repeat 40px 10px;}
 #tvABC1 #epgLater,#tvABC2 #epgLater,#tvABCNews #epgLater {top:21px;}
 
@@ -505,7 +502,7 @@ div.qtip-tip {bottom:7px !important;}
 #epgBubble #epgBubbleInner .epgBubbleDetails {display:block;font-size:11px;font-style:italic;color:#eeeeee;margin:4px 0 0 15px}
 #epgBubble #epgBubbleInner .epgBubbleDesc {display:block;color:#eeeeee;margin:10px 10px 0 15px}
 
-#epgInnerWrap {position:absolute;right:0px;top:28px;width:850px;height:auto;overflow:auto;overflow-y:hidden;padding-bottom:0px;padding-left:5px;}
+#epgInnerWrap {margin-left: 125px;top:28px;width:850px;height:auto;overflow:auto;overflow-y:hidden;padding-bottom:0px;padding-left:5px;}
 #tvABC1 #epgInnerWrap,#tvABC2 #epgInnerWrap,#tvABCNews #epgInnerWrap {top:0px;width:848px;height:164px;}
 
 /* 11640px is 120px * number of epg time segments */
@@ -541,12 +538,8 @@ div.epgRow ul li div.itemSubWrap span.itemSub a {white-space:nowrap;border-right
 div.epgRow ul li {cursor:pointer;}
 div.epgRow ul li:hover {box-shadow: inset 0px 0px 30px #c8c8c8;}
 
-#epgLogoAbc1 {background:blue;position:absolute;width:97px;height:46px;left:20px;top:85px}
 #tvABC1 #epgLogoAbc1 {top:85px;left:0px}
-#epgLogoAbc2 {background:yellow;position:absolute;width:97px;height:46px;left:20px;top:160px}
 #tvABC2 #epgLogoAbc2 {top:85px}
-#epgLogoAbc3 {background:red;position:absolute;width:97px;height:46px;left:20px;top:257px}
-#epgLogoAbc4 {background:darkblue;position:absolute;width:97px;height:46px;left:20px;top:344px}
 #tvABCNews #epgLogoAbc4 {top:85px;left:0px}
 
 #epgiView {background:none;position:absolute;bottom:296px;left:0px;width:978px;height:84px;margin:0;border-top:1px solid #c1c6c5;border-bottom:1px solid #4d656e}
@@ -583,7 +576,6 @@ div.epgRow ul li:hover {box-shadow: inset 0px 0px 30px #c8c8c8;}
 #tvABC2 #pageWrapper div.mainContentInnerv #epgWrap {width:960px;}
 #tvABC2 #pageWrapper div.mainContentInnerv #epgWrap {padding:20px 0 20px 20px;}
 #pageWrapper div.mainContentInnerv #epgWrap #epgEarlier, #pageWrapper div.mainContentInnerv #epgWrap #epgLater {display:none;}
-#pageWrapper div.mainContentInnerv #epgWrap #leftSide {display:none !important;}
 #pageWrapper div.mainContentInnerv #epgWrap #epgInnerWrap {display:block;height:auto;top:auto;left:auto;position:relative;overflow:visible;float:left;width:600px;clear:both}
 #pageWrapper div.mainContentInnerv #epgWrap #epgTimes {display:none;}
 #pageWrapper div.mainContentInnerv #epgWrap #epgInnerWrap div.epgRowWrap {position:relative;height:auto;display:block;float:left;overflow:visible;}
@@ -1434,4 +1426,20 @@ body.iviewChannel div#promoBoxHolder {margin-bottom:2.8em}
 .visually-hidden {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
+}
+
+.epgLeftSide {
+    position: absolute;
+    left: 0;
+    top: auto;
+    height: 86px;
+    border-top: 1px solid #CACDCD;
+    padding: 20px 14px;
+    background: white;
+}
+#epgEarlier {
+    border-top: none;
+    text-align: right;
+    width: 110px;
+    padding-top: 26px;
 }
