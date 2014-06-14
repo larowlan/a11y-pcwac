@@ -43,6 +43,7 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" media="print"
           href="assets/print.css">
+    <link href="assets/widget.css" rel="stylesheet" type="text/css" media="all">
     <script type="text/javascript" src="assets/jquery-1.js"></script>
     <script type="text/javascript" src="assets/jquery-ui-1.js"></script>
     <script type="text/javascript" src="assets/cinerama2.js"></script>
@@ -51,9 +52,6 @@
     <script type="text/javascript" src="assets/tvcommon.js"></script>
     <script type="text/javascript" src="assets/googleanalytics.js"></script>
 
-
-    <iframe style="width: 0px; height: 0px; border: 0px none; display: none;"
-            src="javascript:false"></iframe>
     <script type="text/javascript">
         var AKSB = AKSB || {};
         AKSB.q = [];
@@ -81,8 +79,8 @@
     </script>
 </head>
 <body id="tvHome">
-<iframe scrolling="no" id="LOCSTORAGE" src="assets/storageframe.html"
-        style="width: 1px; height: 1px; position: absolute; top: -7px; left: -7px; border: 0px none;"></iframe>
+<iframe id="LOCSTORAGE" src="assets/storageframe.html"
+        style="overflow: hidden;width: 1px; height: 1px; position: absolute; top: -7px; left: -7px; border: 0px none;"></iframe>
 
 <!--noindex-->
 <div id="abcNav">
@@ -352,8 +350,7 @@
                                              width="193"></a>
 
     <div id="searchModuleWrap">
-        <div id="searchModule" style="position:relative;width:249px;"
-             role="search">
+        <div id="searchModule" style="position:relative;width:249px;" role="search">
             <h2>TV Program Search</h2>
             <!--a href="#" id="prgNameKey" onclick="return false" class="upArrow">program name or keyword</a-->
             <span id="prgNameKey">Program name:</span>
@@ -500,7 +497,7 @@
 
 <!--div id="leaderboard"></div-->
 
-<div id="heroModule" role="complimentary">
+<div id="heroModule" role="complementary">
     <div class="ui-tabs ui-widget ui-widget-content ui-corner-all"
          id="heroTabs">
         <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"
@@ -508,30 +505,30 @@
             <li class="ui-state-default ui-corner-top" id="heroS1"><a
                     href="#slide-1" class="heroThumblinks"><img
                     src="assets/checkoutS2gen-100B.jpg" id="hero1Img"
-                    alt="The Checkout" border="0"></a><span>The Checkout</span>
+                    alt="The Checkout"></a><span>The Checkout</span>
             </li>
             <li class="ui-corner-top ui-state-default" id="heroS2"><a
                     href="#slide-2" class="heroThumblinks"><img
                     src="assets/menmadeusthin-100.jpg" id="hero2Img"
-                    alt="The Men Who Made Us Thin" border="0"></a><span>The Men Who Made Us Thin</span>
+                    alt="The Men Who Made Us Thin"></a><span>The Men Who Made Us Thin</span>
             </li>
             <li class="ui-corner-top ui-tabs-selected ui-state-active"
                 id="heroS3"><a href="#slide-3" class="heroThumblinks"><img
                     src="assets/dirtylaundryliveS2-100C.jpg" id="hero3Img"
-                    alt="Dirty Laundry Live" border="0"></a><span>Dirty Laundry Live</span>
+                    alt="Dirty Laundry Live"></a><span>Dirty Laundry Live</span>
             </li>
             <li class="ui-state-default ui-corner-top" id="heroS4"><a
                     href="#slide-4" class="heroThumblinks"><img
                     src="assets/womenshockey2014-100.jpg" id="hero4Img"
                     alt="Hockey World Cup"
-                    border="0"></a><span>Hockey World Cup</span></li>
+                   ></a><span>Hockey World Cup</span></li>
         </ul>
 
 
         <div style="" id="slide-1"
              class="heroslide ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
             <img src="assets/checkoutS2gen-980B.jpg" alt="promo slide"
-                 border="0" height="423" width="980">
+                 height="423" width="980">
 
             <div style="display: block;" class="heroGradient">&nbsp;</div>
             <div class="heroPlay"><a href="#" class="heroPlayit"
@@ -554,15 +551,12 @@
                                class="website">Visit <span
                                 class="visually-hidden">The checkout </span>website</a>
                         </li>
-                        <br>
                         <li><a href="http://iview.abc.net.au/programs/checkout"
                                class="watchi">Watch <span
                                 class="visually-hidden">The checkout </span>on
                             iview</a></li>
-                        <br>
                         <li><a href="http://www.facebook.com/checkouttv"
                                class="facebook">Connect on Facebook</a></li>
-                        <br>
                         <li><a href="https://twitter.com/checkouttv"
                                class="twitter">Follow on Twitter</a></li>
                     </ul>
@@ -584,7 +578,7 @@
 
         <div style="" id="slide-2"
              class="heroslide ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
-            <img src="assets/menmadeusthin-980.jpg" alt="promo slide" border="0"
+            <img src="assets/menmadeusthin-980.jpg" alt="promo slide"
                  height="423" width="980">
 
             <div style="display: block;" class="heroGradient">&nbsp;</div>
@@ -609,7 +603,6 @@
                                class="website">Visit <span
                                     class="visually-hidden">The men who made us thin </span>website</a><br>
                         </li>
-                        <br>
                         <li>
                             <a href="http://iview.abc.net.au/programs/men-who-made-us-fat"
                                class="watchi">Watch <span
@@ -637,7 +630,7 @@
         <div style="" id="slide-3"
              class="heroslide ui-tabs-panel ui-widget-content ui-corner-bottom">
             <img src="assets/dirtylaundryliveS2-980C.jpg" alt="promo slide"
-                 border="0" height="423" width="980">
+                 height="423" width="980">
 
             <div style="display: block;" class="heroGradient">&nbsp;</div>
 
@@ -659,16 +652,13 @@
                                class="website">Visit <span
                                     class="visually-hidden"> Dirty Laundy </span>website</a>
                         </li>
-                        <br>
                         <li>
                             <a href="http://iview.abc.net.au/programs/dirty-laundry-live"
                                class="watchi">Watch <span
                                     class="visually-hidden">Dirty laundry live </span>on
                                 iview</a></li>
-                        <br>
                         <li><a href="http://www.facebook.com/DirtyLaundryLive"
                                class="facebook">Connect on Facebook</a></li>
-                        <br>
                         <li><a href="http://www.twitter.com/dirtylaundryabc"
                                class="twitter">Follow on Twitter</a></li>
                     </ul>
@@ -692,7 +682,7 @@
         <div id="slide-4"
              class="heroslide ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
             <img src="assets/womenshockey2014-980.jpg" alt="promo slide"
-                 border="0" height="423" width="980">
+                 height="423" width="980">
 
             <div style="display: block;" class="heroGradient">&nbsp;</div>
             <div class="heroPlay"><a href="#" class="heroPlayit"
@@ -714,7 +704,6 @@
                     <ul>
                         <li><a href="http://www.abc.net.au/news/sport/"
                                class="website">Go to ABC Grandstand</a></li>
-                        <br>
                         <li>
                             <a href="http://iview.abc.net.au/programs/hockey-world-cup-highlights/"
                                class="watchi">Highlights on iview</a></li>
@@ -748,7 +737,7 @@
 <div id="mainContent" role="main">
 <div id="featureModule">
     <noscript>
-        <style>
+        <style type="text/css" scoped="">
             #featureModuleNav {
                 display: none;
             }
@@ -777,7 +766,7 @@
         <div class="ftrItem">
             <a href="http://iview.abc.net.au/programs/grand-designs"><img
                     src="assets/granddesignsS11gen-140.jpg" alt="Grand Designs"
-                    class="ftrImg" border="0" height="79" width="140"></a>
+                    class="ftrImg" height="79" width="140"></a>
             <h5><a href="http://iview.abc.net.au/programs/grand-designs">Grand
                 Designs</a></h5>
 
@@ -792,7 +781,7 @@
         <div class="ftrItem">
             <a href="http://iview.abc.net.au/programs/artifact/"><img
                     src="assets/SBartifact-140.jpg" alt="Sunday Best: Artifact"
-                    class="ftrImg" border="0" height="79" width="140"></a>
+                    class="ftrImg" height="79" width="140"></a>
             <h5><a href="http://iview.abc.net.au/programs/artifact/">Sunday
                 Best: Artifact</a></h5>
 
@@ -808,7 +797,7 @@
             <a href="http://iview.abc.net.au/programs/when-the-beatles-drove-us-wild/"><img
                     src="assets/beatleswild-140.jpg"
                     alt="When The Beatles Drove Us Wild" class="ftrImg"
-                    border="0" height="79" width="140"></a>
+                    height="79" width="140"></a>
             <h5>
                 <a href="http://iview.abc.net.au/programs/when-the-beatles-drove-us-wild/">When
                     The Beatles Drove Us Wild</a></h5>
@@ -823,7 +812,7 @@
         <div class="ftrItem">
             <a href="http://iview.abc.net.au/collection/368"><img
                     src="assets/freshblood4-140.jpg" alt="Fresh Blood"
-                    class="ftrImg" border="0" height="79" width="140"></a>
+                    class="ftrImg" height="79" width="140"></a>
             <h5><a href="http://iview.abc.net.au/collection/368">Fresh Blood</a>
             </h5>
 
@@ -838,7 +827,7 @@
         <div class="ftrItem">
             <a href="http://iview.abc.net.au/programs/old-school/"><img
                     src="assets/oldschoolE3-140.jpg" alt="Old School"
-                    class="ftrImg" border="0" height="79" width="140"></a>
+                    class="ftrImg" height="79" width="140"></a>
             <h5><a href="http://iview.abc.net.au/programs/old-school/">Old
                 School</a></h5>
 
@@ -859,7 +848,7 @@
         <div class="ftrItem">
             <a href="http://www.abc.net.au/tv/programs/jonah-from-tonga/"><img
                     src="assets/jonahtonga-140B.jpg" alt="Jonah From Tonga"
-                    class="ftrImg" border="0" height="79" width="140"></a>
+                    class="ftrImg" height="79" width="140"></a>
             <h5><a href="http://www.abc.net.au/tv/programs/jonah-from-tonga/">Jonah
                 From Tonga</a></h5>
 
@@ -874,7 +863,7 @@
         <div class="ftrItem">
             <a href="http://www.abc.net.au/qanda"><img
                     src="assets/qandagen-140B.jpg" alt="Q&amp;A" class="ftrImg"
-                    border="0" height="79" width="140"></a>
+                    height="79" width="140"></a>
             <h5><a href="http://www.abc.net.au/qanda">Q&amp;A</a></h5>
 
             <p>Find out who's coming up next on <i>Q&amp;A</i> and submit a
@@ -888,7 +877,7 @@
         <div class="ftrItem">
             <a href="http://www.abc.net.au/tv/programs/dirty-laundry-live/"><img
                     src="assets/dirtylaundryliveS2-140F.jpg"
-                    alt="Dirty Laundry Live" class="ftrImg" border="0"
+                    alt="Dirty Laundry Live" class="ftrImg"
                     height="79" width="140"></a>
             <h5><a href="http://www.abc.net.au/tv/programs/dirty-laundry-live/">Dirty
                 Laundry Live</a></h5>
@@ -904,7 +893,7 @@
         <div class="ftrItem">
             <a href="http://www.abc.net.au/tv/thecheckout/"><img
                     src="assets/checkoutS2gen-140C.jpg" alt="The Checkout"
-                    class="ftrImg" border="0" height="79" width="140"></a>
+                    class="ftrImg" height="79" width="140"></a>
             <h5><a href="http://www.abc.net.au/tv/thecheckout/">The Checkout</a>
             </h5>
 
@@ -919,7 +908,7 @@
         <div class="ftrItem">
             <a href="http://www.abc.net.au/rage"><img
                     src="assets/ragegen-140.jpg" alt="rage" class="ftrImg"
-                    border="0" height="79" width="140"></a>
+                    height="79" width="140"></a>
             <h5><a href="http://www.abc.net.au/rage">rage</a></h5>
 
             <p>Check out the new look <i>rage</i> website with playlists, the
@@ -939,7 +928,7 @@
         <div class="ftrItem">
             <a href="http://www.abc.net.au/tv/programs/carlotta/"><img
                     src="assets/carlotta-140.jpg" alt="Carlotta" class="ftrImg"
-                    border="0" height="79" width="140"></a>
+                    height="79" width="140"></a>
             <h5>
                 <a href="http://www.abc.net.au/tv/programs/carlotta/">Carlotta</a>
             </h5>
@@ -956,7 +945,7 @@
             <a href="http://www.abc.net.au/tv/watchnow/#id=timeofourlivesS2"><img
                     src="assets/timeofourlivesS2E1-140.jpg"
                     alt="The Time of Our Lives (Series 2)" class="ftrImg"
-                    border="0" height="79" width="140"></a>
+                    height="79" width="140"></a>
             <h5>
                 <a href="http://www.abc.net.au/tv/watchnow/#id=timeofourlivesS2">The
                     Time of Our Lives (Series 2)</a></h5>
@@ -973,7 +962,7 @@
         <div class="ftrItem">
             <a href="http://www.abc.net.au/tv/programs/king-sun-john-olsen/"><img
                     src="assets/kingsun-140.jpg" alt="The King Sun: John Olsen"
-                    class="ftrImg" border="0" height="79" width="140"></a>
+                    class="ftrImg" height="79" width="140"></a>
             <h5>
                 <a href="http://www.abc.net.au/tv/programs/king-sun-john-olsen/">The
                     King Sun: John Olsen</a></h5>
@@ -989,7 +978,7 @@
         <div class="ftrItem">
             <a href="http://www.abc.net.au/tv/programs/hollywood-complex/"><img
                     src="assets/SBhollywoodcomplex-140.jpg"
-                    alt="The Hollywood Complex" class="ftrImg" border="0"
+                    alt="The Hollywood Complex" class="ftrImg"
                     height="79" width="140"></a>
             <h5><a href="http://www.abc.net.au/tv/programs/hollywood-complex/">The
                 Hollywood Complex</a></h5>
@@ -1005,7 +994,7 @@
         <div class="ftrItem">
             <a href="http://www.abc.net.au/tv/programs/tunnel/"><img
                     src="assets/tunnel-140.jpg" alt="The Tunnel" class="ftrImg"
-                    border="0" height="79" width="140"></a>
+                    height="79" width="140"></a>
             <h5><a href="http://www.abc.net.au/tv/programs/tunnel/">The
                 Tunnel</a></h5>
 
@@ -1089,12 +1078,12 @@
         <div class="underline"></div>
         <p id="promoAbcnewsNow">6:00pm: AEST <a
                 href="http://www.abc.net.au/tv/guide/abcnews24/201406/programs/NU1410H117D2014-06-12T180000.htm"
-                id="NU1410H117"><span
+                id="NU1410H117b"><span
                 class="visually-hidden">6:00pm: AEST </span>ABC News</a></p>
 
         <p id="promoAbcnewsNext">8:30pm: AEST <a
                 href="http://www.abc.net.au/tv/guide/abcnews24/201406/programs/NU1404H072D2014-06-12T203130.htm"
-                id="NU1404H072"><span
+                id="NU1404H072b"><span
                 class="visually-hidden">8:30pm: AEST </span>The Business</a></p>
         <!--p>1pm: Global news</p-->
         <div class="underline"></div>
@@ -1117,21 +1106,21 @@
 
             <a href="http://www.abc.net.au/tv/programs/mix/#episode/NU1496H001S00"><img
                     src="assets/220x220-TheMix.jpg" alt="The Mix"
-                    border="0"></a>
+                   ></a>
         </div>
         <div style="display: none;" id="promo2">
 
 
             <a href="http://ab.co/FreshBlood"><img
                     src="assets/220x220-FreshBlood-now.jpg" alt="Fresh Blood"
-                    border="0"></a>
+                   ></a>
         </div>
         <div style="display: none;" id="promo3">
 
 
             <a href="http://www.abc.net.au/tveducation/"><img
                     src="assets/220x220-Education.jpg" alt="TV Education"
-                    border="0"></a>
+                   ></a>
         </div>
     </div>
     <div class="box220 dark" id="promoBestof">
@@ -1164,7 +1153,7 @@
 <div id="col3" class="column240">
     <div class="box220" id="promoSocial">
         <img src="assets/header_promo_social.gif" alt="Connect with ABC TV"
-             style="margin:0px 0px 20px 20px">
+             style="margin:0 0 20px 20px">
     </div>
     <div id="socialpromo">
         <a class="social-sprite social-facebook"
@@ -1176,9 +1165,9 @@
         <a class="social-sprite social-instagram"
            href="http://instagram.com/ABCTV"><span class="visually hidden">Connect with ABC TV on </span>Instagram</a>
     </div>
-    <style type="text/css">
+    <style type="text/css" scoped="">
 
-        #promoNewsLetter {
+        #promoNewsLetter-outer {
             background: #15262c;
             width: 200px;
             padding: 5px 0px 0px 10px;
@@ -1189,7 +1178,7 @@
     </style>
 
 
-    <div class="box220" id="promoNewsLetter">
+    <div class="box220" id="promoNewsLetter-outer">
         <div id="promoNewsletter">
             <h3><a href="http://www.abc.net.au/tv/connect/newsletter.htm">ABC TV
                 Newsletter</a></h3>
@@ -1233,7 +1222,7 @@
 </div>
 </div>
 
-<div id="sidebar" role="complimentary">
+<div id="sidebar" role="complementary">
     <div id="miniGuide">
         <h2>TV Guide</h2>
         <a id="onNow" href="#onNowRows">ON NOW</a>
@@ -1245,7 +1234,7 @@
 
             <div class="miniRow" id="miniAbc1">
                 <a href="http://www.abc.net.au/tv/channels/abc1.htm"><img
-                        src="assets/logo_abc1_48.gif" alt="ABC1" border="0"></a>
+                        src="assets/logo_abc1_48.gif" alt="ABC1"></a>
                 <span class="miniItem"><span id="miniTabc1a">6:30pm:</span><span
                         class="miniPrgName" id="miniPabc1a"><a
                         href="http://www.abc.net.au/tv/guide/abc1/201406/programs/ZX1232A005D2014-06-12T182920.htm"
@@ -1259,7 +1248,7 @@
             <div class="miniRow" id="miniAbc2">
                 <a href="http://www.abc.net.au/tv/channels/abc2.htm"><img
                         src="assets/logo_abc2abc4kids_48b.gif"
-                        alt="ABC2/ABC4Kids" border="0"></a>
+                        alt="ABC2/ABC4Kids"></a>
                 <span class="miniItem"><span id="miniTabc2a">6:30pm:</span><span
                         class="miniPrgName" id="miniPabc2a"><a
                         href="http://www.abc.net.au/tv/guide/abc2/201406/programs/ZX5493A040D2014-06-12T182903.htm"
@@ -1273,7 +1262,7 @@
             </div>
             <div class="miniRow" id="miniAbc3">
                 <a href="http://www.abc.net.au/abc3/"><img
-                        src="assets/logo_abc3_48.gif" alt="ABC3" border="0"></a>
+                        src="assets/logo_abc3_48.gif" alt="ABC3"></a>
                 <span class="miniItem"><span id="miniTabc3a">6:30pm:</span><span
                         class="miniPrgName" id="miniPabc3a"><a
                         href="http://www.abc.net.au/tv/guide/abc3/201406/programs/ZX0917A017D2014-06-12T183133.htm"
@@ -1288,7 +1277,7 @@
             <div class="miniRow" id="miniAbc4">
                 <a href="http://www.abc.net.au/tv/channels/abcnews24.htm"><img
                         src="assets/logo_abc4_48.gif" alt="ABC News 24"
-                        border="0"></a>
+                       ></a>
                 <span class="miniItem"><span id="miniTabc4a">6:00pm:</span><span
                         class="miniPrgName" id="miniPabc4a"><a
                         href="http://www.abc.net.au/tv/guide/abcnews24/201406/programs/NU1410H117D2014-06-12T180000.htm"
@@ -1303,7 +1292,7 @@
             <div class="miniRow" id="miniAbciview">
                 <a href="http://iview.abc.net.au/"><img
                         src="assets/logo_iview_48.gif" alt="ABC iView"
-                        border="0"></a>
+                       ></a>
                 <span class="miniItem"><a href="http://iview.abc.net.au/">Never
                     miss a moment</a></span>
             </div>
@@ -1318,7 +1307,6 @@
     <!--include virtual="/tv/inc/rightcol/promo_newsletter.htm" -->
     <!-- shop inc -->
     <script type="text/javascript" src="assets/widget.js"></script>
-    <link href="assets/widget.css" rel="stylesheet" type="text/css" media="all">
     <div class="best feature" id="abc-shop">
         <h3><a href="http://shop.abc.net.au/">Buy from ABC Shop</a></h3>
 
@@ -1362,22 +1350,22 @@
 
         <div id="channelLogos">
             <a href="http://www.abc.net.au/tv/channels/abc1.htm"><img
-                    src="assets/logo_abc1_48.gif" alt="ABC1" border="0"
+                    src="assets/logo_abc1_48.gif" alt="ABC1"
                     width="48"></a>
             <a href="http://www.abc.net.au/tv/channels/abc2.htm"><img
-                    src="assets/logo_abc2_48.gif" alt="ABC2" border="0"
+                    src="assets/logo_abc2_48.gif" alt="ABC2"
                     width="48"></a>
             <a href="http://www.abc.net.au/abc3"><img
-                    src="assets/logo_abc3_48.gif" alt="ABC3" border="0"
+                    src="assets/logo_abc3_48.gif" alt="ABC3"
                     width="48"></a>
             <a href="http://www.abc.net.au/abckids/"><img
                     src="assets/logo_abc4kids_48.gif" alt="ABC for Kids"
-                    border="0" width="48"></a>
+                    width="48"></a>
             <a href="http://www.abc.net.au/tv/channels/abcnews24.htm"><img
-                    src="assets/logo_abc4_57.gif" alt="ABC News 24" border="0"
+                    src="assets/logo_abc4_57.gif" alt="ABC News 24"
                     width="57"></a>
             <a href="http://iview.abc.net.au/"><img
-                    src="assets/logo_iview_48.gif" alt="ABC iview" border="0"
+                    src="assets/logo_iview_48.gif" alt="ABC iview"
                     width="48"></a>
         </div>
 
@@ -1563,7 +1551,7 @@
 })();
 window._fbq = window._fbq || [];
 window._fbq.push(["track", "PixelInitialized", {}]);</script>
-<noscript><img height="1" width="1" border="0" alt="" style="display:none"
+<noscript><img height="1" width="1" alt="" style="display:none"
                src="https://www.facebook.com/tr?id=683626038366978&amp;ev=NoScript">
 </noscript>
 </body>
