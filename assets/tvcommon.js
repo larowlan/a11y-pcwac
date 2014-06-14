@@ -18,7 +18,7 @@ $('.programsList .azList a').each(function() {
 	 // check url pattern and check the date was after the program page was released.
 if (pattern.test(checkURL) && yearMonth > 201305) {
    //highlight links being rewritten $(this).css('color','#ff0000');
-   
+
 	if($(this).parent().hasClass('website')){
 		var titleTxt = $(this).parent().parent().children('.programTitle').children('a').text();
 	}
@@ -37,9 +37,9 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 	else{
 	}
 
-	var titleM = titleTxt.slice(0,3);			
+	var titleM = titleTxt.slice(0,3);
 	var titleA = titleTxt.slice(0,2);
-						
+
 	if(titleM=='The'){
 		var titleDir = (titleTxt.replace(/\'|\!|\:|\.|\/|\,|\"/g,'')).replace(/The /,'').replace(/ \+ /g,'-').replace(/ /g,'-').replace(/&/g,'and').replace(/ ,/g,'-').toLowerCase();
 	}
@@ -48,20 +48,20 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 	}
 	else{
 		var titleDir = (titleTxt.replace(/'|\!|\:|\.|\/|\,|\"/g,'')).replace(/ \+ /g,'-').replace(/ /g,'-').replace(/&/g,'and').replace(/ ,/g,'-').toLowerCase();
-	}	
-												
+	}
+
 	var websiteURL = "http://www.abc.net.au/tv/programs/"+titleDir+"/";
-	
+
 	$(this).attr('href',websiteURL);
 }
-	
+
 });
 
 	// header module
 	$("#prgAz").click(function () {
 		$("#tvAzWrap").slideToggle("fast");
 		$(this).toggleClass("upArrow").toggleClass("downArrow");
-	});	
+	});
 
 	// hero modules
 	$("#heroTabs .heroslide").each(function(i) {
@@ -70,44 +70,44 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 		$(this).children('.heroHidden1').attr('id','slideThumb'+i+'src');
 		$(this).children('.heroHidden2').attr('id','slideThumb'+i+'copy');
 	});
-	
+
 	if ($("#heroTabs").length) {
 		var $herotabs =	$('#heroTabs').tabs({ fx: { opacity: 'toggle' } }).tabs('rotate', 10000);
-	}	
+	}
 	$("#heroModule .heroGradient").show();
 	$("#heroModule .heroPlay img").show();
 	$("#heroModule .copyheroWrap").show();
 	$("#heroModule .air").show();
 	$("#heroModule h1").show();
 
-	
+
 	// hero thumbs populate
 	$("#heroS1 img").attr('src',function() {return $("#slideThumb1src").html()});
-	$("#heroS2 img").attr('src',function() {return $("#slideThumb2src").html()});	
-	$("#heroS3 img").attr('src',function() {return $("#slideThumb3src").html()});	
-	$("#heroS4 img").attr('src',function() {return $("#slideThumb4src").html()});	
+	$("#heroS2 img").attr('src',function() {return $("#slideThumb2src").html()});
+	$("#heroS3 img").attr('src',function() {return $("#slideThumb3src").html()});
+	$("#heroS4 img").attr('src',function() {return $("#slideThumb4src").html()});
 	$("#heroS1 span").html($('#slideThumb1copy').html());
 	$("#heroS2 span").html($('#slideThumb2copy').html());
 	$("#heroS3 span").html($('#slideThumb3copy').html());
-	$("#heroS4 span").html($('#slideThumb4copy').html());	
-	
+	$("#heroS4 span").html($('#slideThumb4copy').html());
+
 	// hero slide video play
 	$(".heroPlayit").click(function () {
 		$("#heroVidInner").fadeIn('slow', function() {
 			showHeroVid();
 		});
 	});
-	
+
 	// hero close video on thumbs click
-	$(".heroThumblinks").click(function () {hideHeroVid();});		
-	
+	$(".heroThumblinks").click(function () {hideHeroVid();});
+
 	// hero rotation on mouse-over, mouse-out
 	$("#heroModule").mouseover(function () {$('#heroTabs').tabs('rotate', null);return false;});
 	$("#heroModule").mouseout(function () {$('#heroTabs').tabs('rotate', 10000);return false;});
-	
+
 	// promo rotator
 	if ($("#fpPromoRotate").length) {showPromo()}
-	
+
 	// feature modules
 	if ($("#featureModuleNav").length) {
 		var $featuretabs = $('#featureModuleNav').tabs();
@@ -121,7 +121,7 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 	$("#uiTli1").slideDown("slow");
 	$("#uiTli2").slideDown("slow");
 	$("#uiTli3").slideDown("slow");
-	
+
 
 
 	// mini guide
@@ -133,8 +133,8 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 			dataType: "html",
 			success: function(html) {miniGuide(html,'abc1');
 			}
-		});	
-	
+		});
+
 		$.ajax({
 			type: "GET",
 			//url: "/tv/guide/abc2/netw/mini-epg-today.htm",
@@ -142,8 +142,8 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 			dataType: "html",
 			success: function(html) {miniGuide(html,'abc2');
 			}
-		});	
-	
+		});
+
 		$.ajax({
 			type: "GET",
 			//url: "/tv/guide/abc3/netw/mini-epg-today.htm",
@@ -152,7 +152,7 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 			success: function(html) {miniGuide(html,'abc3');
 			}
 		});
-		
+
 		$.ajax({
 			type: "GET",
 			//url: "/tv/guide/abcnews24/netw/mini-epg-today.htm",
@@ -160,10 +160,10 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 			dataType: "html",
 			success: function(html) {miniGuide(html,'abc4');
 			}
-		});					
+		});
 	}
-	
-	
+
+
 	// A-Z program index: /tv/programs/
 
 	$("#progWrap table tr").each(function(e){
@@ -192,7 +192,7 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 		  break;
 		case 'dirty-laundry':
 		  prgLink="http://www.abc.net.au/tv/programs/dirty-laundry-live";
-		  break;		  
+		  break;
 		case 'media-watch':
 		  prgLink="http://www.abc.net.au/mediawatch";
 		  break;
@@ -213,7 +213,7 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 		  break;
 		case 'australian-story':
 		  prgLink="http://www.abc.net.au/austory";
-		  break;		  
+		  break;
 		case 'lateline':
 		  prgLink="http://www.abc.net.au/lateline";
 		  break;
@@ -231,7 +231,7 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 		  break;
 		case 'inside-business':
 		  prgLink="http://www.abc.net.au/insidebusiness";
-		  break;		  
+		  break;
 		case 'insiders':
 		  prgLink="http://www.abc.net.au/insiders";
 		  break;
@@ -243,19 +243,19 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 		  break;
 		case 'drum':
 		  prgLink="http://www.abc.net.au/news/abcnews24/programs/the-drum";
-		  break;		  
-		} 		
-		
+		  break;
+		}
+
 		var prgName = $(this).find('td').eq(0).html();
 		$("#newList").append('<li><a href="'+prgLink+'">'+prgName+'</a></li>');
 		/* additional search box filer list disabled */
 		//$("#filterListA").append('<li><a href="'+prgLink+'">'+prgName+'</a></li>');
-	});	
-	
-	
+	});
+
+
 	//only do this on program landing page az not funnelback search
-	if ($('body#tvPrograms').hasClass('landing')){	
-		if (window.location.hash) {	 
+	if ($('body#tvPrograms').hasClass('landing')){
+		if (window.location.hash) {
 			var filterLetter = window.location.hash.charAt(1);
 			if (window.location.hash.length == 2) {
 				filterLetter = filterLetter.toLowerCase();
@@ -267,22 +267,22 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 					setTimeout(function(){
 					$('.programAZ #showall a').click();
 					}, 700);
-				}	
+				}
 			}
-		}	
-	}	
-	
+		}
+	}
 
 
-	
+
+
 	$("#clearForm").click(function(e) {
 		$("#search_input").val('');
 		$('#newList').hide();
 		$('#newListb').html('');
 		return false;
-	});	
-	
-	if ($('body#tvPrograms').hasClass('landing')){	
+	});
+
+	if ($('body#tvPrograms').hasClass('landing')){
 		$("#tvPrograms .programAZ li,#tvPrograms #tvAzWrap li,#tvPrograms #prgShowAll").click(function(c) {
 			var whatItem = $(this).text();
 			if ((whatItem != "SHOW ALL")&&(whatItem != "#")&&(whatItem != "Show All")) {
@@ -298,36 +298,36 @@ if (pattern.test(checkURL) && yearMonth > 201305) {
 				$('#mainContent #newList li').removeClass('color','#3DADD4');
 			}
 			return false;
-		});		
+		});
 	}
-	
+
 	$(function() {
 		$('#search_input').fastLiveFilter('#newList','',1);
-	});		
-	
-	
-	// search box filter list disabled 
-	/* 
+	});
+
+
+	// search box filter list disabled
+	/*
 	$(function() {
 		$('#inBox').fastLiveFilter('#filterListA','','box');
 	});
-	*/	
+	*/
 
 	$('#inBox').focus(function() {
 		var e = jQuery.Event("keydown");
 		e.which = 40; // down arrow key
-		$("#search_input").trigger(e);		
-	});	
+		$("#search_input").trigger(e);
+	});
 
 
-		
-	
+
+
 
 // end ready
 });
 
 
-// mini guide 
+// mini guide
 function miniGuide(html,whatChan) {
 	var dateNow = new Date ();
 	var hour = dateNow.getHours ();
@@ -340,11 +340,11 @@ function miniGuide(html,whatChan) {
 	hourNow = parseInt(hourNow,10);
 	minNow = mins1.toString() + mins2.toString();
 	// if earlier than 4:30am (now 6am), we are at end of guide day so add 24
-	if (hourNow<6) {hourNow+=24;} 
+	if (hourNow<6) {hourNow+=24;}
 	//if ((hourNow==4)&&(minNow<30)) {hourNow+=24;}
 	$(html).children('.itemTitle').each(function(index,domEle){
 		var epgName = $(this).html();
-		var epgTime = $(this).siblings('.itemTime').html();				
+		var epgTime = $(this).siblings('.itemTime').html();
 		var epgNextName = $(this).parent().next().children('.itemTitle').html();
 		var epgNextTime = $(this).parent().next().children('.itemTime').html();
 		var foundColon = epgTime.indexOf(":");
@@ -353,8 +353,8 @@ function miniGuide(html,whatChan) {
 		var minInCell = epgTime.substring(foundColon+1,foundColon+3);
 		hourInCell = parseInt(hourInCell);
 		if ((foundPm!=-1)&&(hourInCell!=12)) {hourInCell+=12}else{if ((foundPm==-1)&&(hourInCell==12)){hourInCell-=12}}
-		// if hour is less than 4 (now 6) and loop is more than 8 programs in 
-		if ((hourInCell<=6)&&(index>8)) {hourInCell+=24;} 
+		// if hour is less than 4 (now 6) and loop is more than 8 programs in
+		if ((hourInCell<=6)&&(index>8)) {hourInCell+=24;}
 		if (hourInCell==hourNow) {
 			if (minNow>=minInCell) {
 				$("#miniP"+whatChan+"a").html(epgName);
@@ -369,8 +369,8 @@ function miniGuide(html,whatChan) {
 				if (epgNextName) {$("#miniP"+whatChan+"b").html(epgNextName+":");}else{$("#miniP"+whatChan+"b").html('Zzzzzz');};
 				if (epgNextTime) {$("#miniT"+whatChan+"b").html(epgNextTime+":");}else{$("#miniT"+whatChan+"b").html('');};
 			}
-		}				
-	});	
+		}
+	});
 	// update promo on fp
 	$("#promoAbcnewsNow").html($('#miniTabc4a').html()+" AEST "+$('#miniPabc4a').html());
 	$("#promoAbcnewsNext").html($('#miniTabc4b').html()+" AEST "+$('#miniPabc4b').html());
@@ -379,10 +379,10 @@ function miniGuide(html,whatChan) {
 // hero module functions
 function hideHeroVid() {
 	var vidDiv = $("#heroVidPlayer").html();
-	if (vidDiv.length > 0) { // if there's an open video 
+	if (vidDiv.length > 0) { // if there's an open video
 		cinerama.pauseVideo('heroVidPlayer');
 		cinerama.hideAllPlayers();
-	};	
+	};
 	$("#heroCloseWrap").hide();
 	$("#heroVidInner").fadeOut('fast', function() {
 		$("#heroVid").fadeOut('fast');
@@ -392,7 +392,13 @@ function hideHeroVid() {
 function showHeroVid() {
 	$("#heroVid").fadeIn('slow', function() {
 		$("#heroVidPlayer").show();
-		$("#heroCloseWrap").show();
+		$("#heroCloseWrap").show({
+    complete: function() {
+      // Focus for keyboard users.
+      setTimeout(function() {
+        $("#heroClose").focus();
+      }, 300);
+    }});
 	});
 }
 
@@ -419,7 +425,7 @@ function showPromo() {
 var timeDistance = 0;
 
 function tvGuide() {
-	// format TV Guide 
+	// format TV Guide
 	if ($("#tvGuide").length) {
 		processChannel("epgAbc1");
 		processChannel("epgAbc2");
@@ -439,10 +445,10 @@ function tvGuide() {
 		var theProgramItem = $('#' + thebackCookie);
 		if (theProgramItem.length > 0){// if item exists
 			theProgramItem = theProgramItem.parent().parent();
-			var nearestTime = theProgramItem.position().left;		
+			var nearestTime = theProgramItem.position().left;
 			$("#epgInnerWrap").scrollTo(nearestTime-120+'px',0,{axis:'x'});
 			//theProgramItem.addClass('selectedProgram');
-		}	
+		}
 		$.cookie('backtoGuide', null);
 	}
 	// move marker to current time
@@ -462,10 +468,10 @@ function processChannel(chName) {
 	hourNow = hour1.toString() + hour2.toString();
 	hourNow = parseInt(hourNow,10);
 	minNow = mins1.toString() + mins2.toString();
-	minNow = parseInt(minNow);	
+	minNow = parseInt(minNow);
 	// make array out of all itemTime spans
 	var contElement = document.getElementById(chName);
-	var arrayItemTimes = getElementsByClassName('itemRealTime', 'span',contElement);	
+	var arrayItemTimes = getElementsByClassName('itemRealTime', 'span',contElement);
 	var arrayItemTimeDist = new Array(); // minutes from midnight of first day
 	var arrayItemDuration = new Array(); // duration of each item in minutes
 	var i = 0;
@@ -480,14 +486,14 @@ function processChannel(chName) {
 		var liTime = arrayItemTimes[i].innerHTML;
 		foundDot = liTime.indexOf(":");
 		foundPm = liTime.indexOf("pm");
-		// create array of each number before colon 
+		// create array of each number before colon
 		hourInCell = liTime.substring(0,foundDot);
 		minInCell = liTime.substring(foundDot+1,foundDot+3);
 		hourInCell = parseInt(hourInCell);
 		minInCell = parseInt(minInCell,10);
-		if ((foundPm!=-1)&&(hourInCell!=12)) {hourInCell+=12}else{if ((foundPm==-1)&&(hourInCell==12)){hourInCell-=12}}						
+		if ((foundPm!=-1)&&(hourInCell!=12)) {hourInCell+=12}else{if ((foundPm==-1)&&(hourInCell==12)){hourInCell-=12}}
 		// if hour is less than 6 and loop is more than 8 programs in (to find distance from midnight on first day)
-		if ((hourInCell<=6)&&(i>8)) {hourInCell+=24;} 
+		if ((hourInCell<=6)&&(i>8)) {hourInCell+=24;}
 		arrayItemTimeDist[i] = (hourInCell*60+minInCell);
 		// check if first program starts after 4:30am (now 6am)
 		if (i==0) {startOffset = ((hourInCell*60+minInCell)-360)*8;}
@@ -500,22 +506,22 @@ function processChannel(chName) {
 			arrayItemDuration[d] = arrayItemTimeDist[d+1] - arrayItemTimeDist[d];
 		} else {
 			arrayItemDuration[d] = 3;
-		}	
+		}
 	}
-	
+
 	// convert time now to time distance from 430am (now from 6am)
 	if (hourNow<6) {hourNow+=24;} // if earlier than 4am, we are at end of day not beginning so add 24
 	timeDistance = ((hourNow*60+minNow)-360); // 360 is minutes from midnight to 6:00am
-	timeDistance = ((timeDistance*8)-5);		
-	
+	timeDistance = ((timeDistance*8)-5);
+
 	// change li width to match duration
-	for (w = 0; w < arrayItemTimes.length-1; w++) {	
+	for (w = 0; w < arrayItemTimes.length-1; w++) {
 		liWidth = arrayItemDuration[w]*8-5; // times 8 pixels, minus offset of 5 pixels (li padding)
 		if ((liWidth>=3)&&(liWidth<27)) { // add info 'i' link in place of title for 1,2,3 min programs
 			smallContent = arrayItemTimes[w];
 			smallContent = $(smallContent).closest('li');
 			$(smallContent).css('padding','0px');
-			liWidth+=5; 
+			liWidth+=5;
 			var newdiv = document.createElement('a');
 			newdiv.className = "infoa";
 			newdiv.innerHTML = 'i';
@@ -524,26 +530,26 @@ function processChannel(chName) {
 			$(smallContent).find('.itemTitle a').not('.infoa').hide();
 			$(smallContent).find('.itemTitle').append(newdiv);
 		}
-		if (liWidth==27) { // adjust padding for 4 min programs 
+		if (liWidth==27) { // adjust padding for 4 min programs
 			smallContent = arrayItemTimes[w];
 			smallContent = $(smallContent).closest('li');
 			$(smallContent).css('padding','1px');
-			liWidth+=4; 
+			liWidth+=4;
 		}
-		if (liWidth==35) { // adjust padding for 5 min programs 
+		if (liWidth==35) { // adjust padding for 5 min programs
 			smallContent = arrayItemTimes[w];
 			smallContent = $(smallContent).closest('li');
 			$(smallContent).css('padding','2px');
-			liWidth+=3; 
+			liWidth+=3;
 		}
-		var normalContent = arrayItemTimes[w];		
-		var firstContent = arrayItemTimes[0];		
+		var normalContent = arrayItemTimes[w];
+		var firstContent = arrayItemTimes[0];
 		if (w==0) {
 			// add margin to first program
 			firstContent = $(firstContent).closest('li');
 			startOffset = startOffset+'px';
 			$(firstContent).css('margin-left',startOffset);
-		} 
+		}
 		normalContent = $(normalContent).closest('li');
 		liWidth = liWidth+'px';
 		$(normalContent).css('width',liWidth);
@@ -554,14 +560,14 @@ function processChannel(chName) {
 // generic get by class name (legacy, can be removed if using jquery)
 function getElementsByClassName(strClass, strTag, objContElm) {
   strTag = strTag || "*";
-  objContElm = objContElm || document;    
+  objContElm = objContElm || document;
   var objColl = objContElm.getElementsByTagName(strTag);
   if (!objColl.length &&  strTag == "*" &&  objContElm.all) objColl = objContElm.all;
-  var arr = new Array();                              
-  var delim = strClass.indexOf('|') != -1  ? '|' : ' ';   
-  var arrClass = strClass.split(delim);    
-  for (var i = 0, j = objColl.length; i < j; i++) {                         
-    var arrObjClass = objColl[i].className.split(' ');   
+  var arr = new Array();
+  var delim = strClass.indexOf('|') != -1  ? '|' : ' ';
+  var arrClass = strClass.split(delim);
+  for (var i = 0, j = objColl.length; i < j; i++) {
+    var arrObjClass = objColl[i].className.split(' ');
     if (delim == ' ' && arrClass.length > arrObjClass.length) continue;
     var c = 0;
     comparisonLoop:
@@ -569,13 +575,13 @@ function getElementsByClassName(strClass, strTag, objContElm) {
       for (var m = 0, n = arrClass.length; m < n; m++) {
         if (arrClass[m] == arrObjClass[k]) c++;
         if ((delim == '|' && c == 1) || (delim == ' ' && c == arrClass.length)) {
-          arr.push(objColl[i]); 
+          arr.push(objColl[i]);
           break comparisonLoop;
         }
       }
     }
   }
-  return arr; 
+  return arr;
 }
 
 
@@ -642,7 +648,7 @@ jQuery.cookie = function(name, value, options) {
 
 
 
-// sort plugin (for program a-z list, modified by ABC to suit purpose) 
+// sort plugin (for program a-z list, modified by ABC to suit purpose)
 
 /**
  * fastLiveFilter jQuery plugin 1.0.3
@@ -658,13 +664,13 @@ jQuery.fn.fastLiveFilter = function(list, options,custom) {
 	var input = this;
 	var timeout = options.timeout || 0;
 	var callback = options.callback || function() {};
-	
+
 	var keyTimeout;
-	
+
 	var lis = list.children();
 	var len = lis.length;
 	var oldDisplay = len > 0 ? lis[0].style.display : "block";
-	callback(len); 
+	callback(len);
 	input.change(function() {
 		if (custom != 'box') {
 			$('#newList').show();
@@ -672,8 +678,8 @@ jQuery.fn.fastLiveFilter = function(list, options,custom) {
 		} else {
 			// search box filter list disabled
 			// $('#keywordResults').show();
-			//$('#filterListA').show(); 
-			$("#filterListB").html('');			
+			//$('#filterListA').show();
+			$("#filterListB").html('');
 		}
 		var filter = input.val().toLowerCase();
 		var li;
@@ -685,42 +691,42 @@ jQuery.fn.fastLiveFilter = function(list, options,custom) {
 			liText = $(li).text();
 			liLink = $(li).html();
 			if (filter.length == 1) {
-				// if first letter match 
+				// if first letter match
 				if (liText.toLowerCase().charAt(0) == filter) {
 					if (li.style.display == "none") {
 						li.style.display = oldDisplay;
 					}
 					numShown++;
 				} else {
-					if (li.style.display != "none") { 
+					if (li.style.display != "none") {
 						li.style.display = "none";
 					}
 				}
-			};	
+			};
 			if (filter.length == 2) {
 				// if first, second letter match
-				if (liText.toLowerCase().substring(0, 2) == filter) {				
+				if (liText.toLowerCase().substring(0, 2) == filter) {
 					if (li.style.display == "none") {
 						li.style.display = oldDisplay;
 					}
 					numShown++;
 				} else {
-					if (li.style.display != "none") { 
+					if (li.style.display != "none") {
 						li.style.display = "none";
 					}
 				}
-			};	
+			};
 			if (filter.length > 2) {
 				// if filter matches first letters of program
-				if (liText.toLowerCase().substring(0, filter.length) == filter) {	
+				if (liText.toLowerCase().substring(0, filter.length) == filter) {
 					if (li.style.display == "none") {li.style.display = oldDisplay;}
 					numShown++;
 				} else {
 					var tmpPos = liText.toLowerCase().indexOf(filter);
-					// regex: whole word: /\bstring\b/ig 
+					// regex: whole word: /\bstring\b/ig
 					var wholeWord = new RegExp('\\b'+filter+'\\b','ig');
 					var wordTypeWhole = liText.search(wholeWord);
-					// if any match and is part of a word, put in second list					
+					// if any match and is part of a word, put in second list
 					if ((tmpPos >= 0)&&(wordTypeWhole < 0)) {
 						if (li.style.display != "none") {li.style.display = "none";}
 						if (custom != 'box') {
@@ -728,7 +734,7 @@ jQuery.fn.fastLiveFilter = function(list, options,custom) {
 						} else {
 							$("#filterListB").append('<li>'+liLink+'</li>');
 						}
-					} else 
+					} else
 						// if any match and IS a whole word
 						if ((tmpPos >= 0)&&(wordTypeWhole >= 0)) {
 							if (li.style.display == "none") {
@@ -739,7 +745,7 @@ jQuery.fn.fastLiveFilter = function(list, options,custom) {
 						if (li.style.display != "none") {li.style.display = "none";}
 					}
 				};
-			};	
+			};
 			if (filter.length == 0) {
 				// blank, show all
 				li.style.display = "none";
