@@ -5322,3 +5322,17 @@ img { border: 0; }
   overflow: hidden;
   color: #eeeeee;
 }
+
+#skip-links {
+  text-align: center;
+  a {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    &:focus, &:active {
+      position: static !important;
+      clip: auto;
+      overflow: visible;
+      height: auto;
+    }
+  }
+}
